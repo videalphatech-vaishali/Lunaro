@@ -1,0 +1,44 @@
+/*!************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blockone/style.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************/
+.second-block-render {
+  background-color: rgb(199, 250, 179);
+  border: 1px solid #d2d4d7;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.second-block-render p {
+  background-color: yellow;
+}
+
+.our-leadership-team-section {
+  padding: 32px;
+  text-align: center;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.get-in-touch-section-body {
+  height: 300px;
+  text-align: center;
+  background: url(../images/blue_backgorund.919301a4.png) center/cover no-repeat;
+  position: relative;
+  align-content: center;
+  background-color: #000;
+}
+
+.get-in-touch-section-body h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.get-in-touch-section-body h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #fff;
+}
