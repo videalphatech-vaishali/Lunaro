@@ -31,7 +31,7 @@ load_country_header();
     get_template_part('template-parts/market-page-widgets/indices/popular-indices');
     // get_template_part('template-parts/market-page-widgets/indices/educational-content');
     get_template_part('template-parts/market-page-widgets/indices/start-trading-now');
-    get_footer();
+    load_country_footer();
     ?>
 </body>
 

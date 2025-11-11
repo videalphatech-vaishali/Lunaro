@@ -30,7 +30,7 @@ load_country_header();
     get_template_part('template-parts/market-page-widgets/luna-pages/featured-markets');
     get_template_part('template-parts/market-page-widgets/luna-pages/start-trading-now');
     get_template_part('template-parts/market-page-widgets/luna-pages/real-trading-example');
-    get_footer();
+    load_country_footer();
     ?>
 </body>
 

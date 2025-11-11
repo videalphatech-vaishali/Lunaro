@@ -38,7 +38,7 @@ get_header('new');
 
     get_template_part('template-parts/trading-widgets/how-to-open-account');
 
-    get_footer();
+    load_country_footer();
     ?>
 
 </div>

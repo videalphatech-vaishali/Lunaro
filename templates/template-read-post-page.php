@@ -365,5 +365,5 @@ set_query_var('click_event1', "_paq.push(['trackEvent', 'View-Detail-Page', 'Sta
 set_query_var('click_event2', "_paq.push(['trackEvent', 'View-Detail-Page', 'Start Trading Now', 'Create Demo Account']);");
 set_query_var('start_trading_bg', '#e7e7e7');
 get_template_part('template-parts/global-widgets/start-trading');
-get_footer();
+load_country_footer();
 ?>

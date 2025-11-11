@@ -64,7 +64,7 @@ get_header('new');
     set_query_var('start_trading_bg', '#eaeaea');
     get_template_part('template-parts/global-widgets/start-trading');
 
-    get_footer();
+    load_country_footer();
     ?>
 
 </div> -->
@@ -1640,7 +1640,7 @@ get_header('new');
         updateCards();
     </script>
  <?php
-       get_footer();
+       load_country_footer();
     ?>
 </body>
 

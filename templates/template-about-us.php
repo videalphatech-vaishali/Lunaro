@@ -20,7 +20,7 @@ get_header('new');
     get_template_part('template-parts/luna-about-2-widgets/mission');
     get_template_part('template-parts/luna-about-2-widgets/regulatory-credential');
     get_template_part('template-parts/luna-about-2-widgets/why-trade-with-us');
-    get_footer();
+    load_country_footer();
     ?>
 </body>
 

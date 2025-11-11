@@ -704,5 +704,5 @@ $is_newsroom_page = strpos($current_url, 'newsroom') !== false;
 
 
 <?php
-get_footer();
+load_country_footer();
 ?>

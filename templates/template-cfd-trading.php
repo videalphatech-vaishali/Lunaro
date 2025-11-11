@@ -25,7 +25,7 @@ load_country_header();
     <?php
     get_template_part('template-parts/trading-widgets/cfd/cfd-hero-section');
     get_template_part('template-parts/trading-widgets/cfd/cfd-faq');
-    get_footer();
+    load_country_footer();
     ?>
 
 </div>

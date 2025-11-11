@@ -20,7 +20,7 @@ load_country_header();
     <?php
     get_template_part('template-parts/trading-widgets/trading-hero-section');
     get_template_part('template-parts/trading-widgets/trading-content');
-    get_footer();
+    load_country_footer();
     ?>
 </body>
 

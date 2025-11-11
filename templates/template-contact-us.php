@@ -14,7 +14,7 @@ load_country_header();
     <?php
     get_template_part('template-parts/luna-contact-widgets/get-in-touch-section');
     get_template_part('template-parts/luna-contact-widgets/three-contact-boxes');
-    get_footer();
+    load_country_footer();
     ?>
     </body>
 </html>

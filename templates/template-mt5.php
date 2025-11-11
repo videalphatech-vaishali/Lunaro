@@ -898,7 +898,7 @@ load_country_header();
     </section>
 
 <?php
-    get_footer();
+    load_country_footer();
     ?>
 </body>
 

@@ -25,7 +25,7 @@ get_header('new');
 
     echo do_shortcode('[contact-form-7 id="7c4ae40" title="Multi-step Form"]');
 
-    get_footer();
+    load_country_footer();
     ?>
 
 </body>

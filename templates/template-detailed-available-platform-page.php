@@ -18,5 +18,5 @@ get_template_part('template-parts/platform-widgets/platform-features');
 get_template_part('template-parts/platform-widgets/how-to-get-started');
 get_template_part('template-parts/platform-widgets/testimonials');
 get_template_part('template-parts/global-widgets/support-resources');
-get_footer();
+load_country_footer();
 ?>

@@ -1291,7 +1291,7 @@ load_country_header();
         </div>
     </section>
     <?php
-        get_footer();
+        load_country_footer();
         ?>
 </body>
 

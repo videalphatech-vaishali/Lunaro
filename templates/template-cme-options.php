@@ -18,7 +18,7 @@ load_country_header();
     get_template_part('template-parts/cme-options/powerful-strategies');
     get_template_part('template-parts/cme-options/master-advanced');
     get_template_part('template-parts/cme-options/trade-options');
-    get_footer();
+    load_country_footer();
     ?>
 </body>
 </html>

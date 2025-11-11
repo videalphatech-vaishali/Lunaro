@@ -1439,7 +1439,7 @@ load_country_header();
     </section>
 
     <?php
-    get_footer();
+    load_country_footer();
     ?>
     <script>
         const items = document.querySelectorAll(".accord-item");

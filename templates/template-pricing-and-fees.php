@@ -43,7 +43,7 @@ get_header('new');
     get_template_part('template-parts/luna-fees-pricing/breakdown-of-charges');
     get_template_part('template-parts/luna-fees-pricing/regulatory-security-info');
     get_template_part('template-parts/luna-fees-pricing/ready-to-start-trading');
-    get_footer();
+    load_country_footer();
     ?>
 </body>
 </html>

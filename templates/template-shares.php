@@ -20,7 +20,7 @@ load_country_header();
     get_template_part('template-parts/market-page-widgets/shares/popular-shares-you');
     // get_template_part('template-parts/market-page-widgets/shares/educational-content');
     get_template_part('template-parts/market-page-widgets/shares/start-trading-now');
-    get_footer();
+    load_country_footer();
     ?>
 </body>
 

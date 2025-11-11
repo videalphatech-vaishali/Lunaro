@@ -448,7 +448,7 @@ get_header('new');
 </div> 
 
 <?php
-   get_footer();
+   load_country_footer();
 ?>
 
 </body>

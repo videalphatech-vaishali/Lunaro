@@ -19,7 +19,7 @@ load_country_header();
     get_template_part('template-parts/cme-futures/choose-your-market-exposure');
     get_template_part('template-parts/cme-futures/building-expertise');
     get_template_part('template-parts/cme-futures/diversify-across');
-    get_footer();
+    load_country_footer();
     ?>
 </body>
 </html>

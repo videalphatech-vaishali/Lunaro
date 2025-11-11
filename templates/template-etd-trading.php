@@ -25,7 +25,7 @@ load_country_header();
     <?php
     get_template_part('template-parts/trading-widgets/etd/etd-hero-section');
     get_template_part('template-parts/trading-widgets/etd/etd-faq');
-    get_footer();
+    load_country_footer();
     ?>
 
 </div>

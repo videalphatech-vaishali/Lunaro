@@ -30,7 +30,7 @@ get_header('new');
     // get_template_part('template-parts/global-widgets/start-trading');
     get_template_part('template-parts/market-page-widgets/benifits-of');
     get_template_part('template-parts/market-page-widgets/educational-content');
-    get_footer();
+    load_country_footer();
     ?>
 
 </div>

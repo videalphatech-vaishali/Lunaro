@@ -290,7 +290,7 @@ load_country_header();
 
     </div>
         <?php 
-    get_footer();
+    load_country_footer();
     ?> 
   <script>
     // Accordion open/close (only one open at a time)

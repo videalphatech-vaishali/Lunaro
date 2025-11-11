@@ -31,7 +31,7 @@ load_country_header();
     get_template_part('template-parts/market-page-widgets/commodities/popular-commodities-you');
     // get_template_part('template-parts/market-page-widgets/commodities/educational-content');
     get_template_part('template-parts/market-page-widgets/commodities/start-trading-now');
-    get_footer();
+    load_country_footer();
     ?>
 </body>
 

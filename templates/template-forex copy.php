@@ -31,7 +31,7 @@ get_header('new');
     get_template_part('template-parts/market-page-widgets/forex/benefits-risk'); 
     get_template_part('template-parts/market-page-widgets/forex/educational-content');
     get_template_part('template-parts/market-page-widgets/forex/start-trading-now');
-    get_footer();
+    load_country_footer();
     ?>
 </body>
 

@@ -1264,7 +1264,7 @@ function handle_country_selection() {
     }
 }
 add_action('init', 'handle_country_selection');
-// 
+// load country-specific header
 function load_country_header() {
     $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk';
     if ($country === 'uae') {
@@ -1272,5 +1272,14 @@ function load_country_header() {
     } else {
         get_header();
     }
+}
+//load footer based on country
+function load_country_footer() {
+      $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+      if ($country === 'uae') { 
+         get_footer('uae');
+      } else { 
+         get_footer();
+      }
 }
 // End PHP session

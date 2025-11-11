@@ -687,7 +687,7 @@ load_country_header();
 
     <?php
 
-   get_footer();
+   load_country_footer();
 
     ?> 
 </body>

@@ -1670,7 +1670,7 @@ background-image: url('<?php echo get_template_directory_uri(); ?>/assets/images
 
 <?php 
 
-get_footer();
+load_country_footer();
 ?> 
 
   </body>

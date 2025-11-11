@@ -21,13 +21,7 @@ load_country_header();
     get_template_part('template-parts/home-widgets/luna-market_is_different');
     get_template_part('template-parts/home-widgets/luna-platforms');
     get_template_part('template-parts/home-widgets/luna-start-trading-now');
-      // get the country from session or default to 'uk'
-      $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
-      if ($country === 'uae') { 
-         get_footer('uae');
-      } else { 
-         get_footer();
-      }
+    load_country_footer();
     ?>
 </body>
 </html>

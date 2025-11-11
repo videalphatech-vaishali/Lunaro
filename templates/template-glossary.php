@@ -15,6 +15,6 @@ load_country_header();
 
     <?php
     get_template_part('template-parts/glossary/glossary-content');
-    get_footer();
+    load_country_footer();
     ?>
 </div>
