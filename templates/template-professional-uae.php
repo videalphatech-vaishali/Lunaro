@@ -8,7 +8,7 @@
  * @subpackage YourThemeName
  */
 
-    get_template_part('template-parts/retail-professional');
+     get_header('logo');
     
 ?>
 <!DOCTYPE html>

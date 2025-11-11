@@ -314,6 +314,11 @@
   <section class="hero-section" style="background-image: url('/wp-content/uploads/2025/11/Hero-Background.png');">
     <div class="hero-container">
       <!-- Left Text -->
+          <?php 
+            // get the country from session or default to 'uk'
+            $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+            if ($country === 'uae') { 
+            ?>
       <div class="hero-text">
         <h1>Trade Forex, CFDs, ETDs and Global Markets with <br> Confidence</h1>
         <p>
@@ -325,6 +330,20 @@
           <button class="btn-filled signup">Start Trading</button>
         </div>
       </div>
+        <?php 
+            } else { 
+            ?>
+      <div class="hero-text">
+        <h1>Trade Forex, CFDs, Spread Betting and Global Markets <br>  with Confidence</h1>
+        <p>
+         Trade CFDs on 80+ forex pairs, global indices, commodities and shares through our award-winning trading platforms. Join thousands of traders who choose Lunaro Markets for competitive spreads, fast execution and professional support.
+        </p>
+        <div class="button-group">
+          <button class="btn-filled signup">Start Trading</button>
+        </div>
+      </div>
+
+   <?php } ?>
 
       <!-- Right Image -->
       <div class="hero-image">

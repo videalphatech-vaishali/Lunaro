@@ -2371,7 +2371,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
         </p>
 
         <div class="flex flex-col sm:flex-col sm:gap-4 gap-3 justify-center md:justify-start">
-          <button class="bg-[#f5ede0] text-black font-medium rounded-full hover:bg-white transition w-full sm:w-[200px] h-14 block">
+          <button class="bg-[#f5ede0] text-black font-medium rounded-full hover:bg-white transition w-full sm:w-[200px] h-14 block signup">
             Start trading
           </button>
           <!-- <button class="block border border-[#A89469] text-[#A89469] font-medium rounded-full hover:bg-[#A89469]/10 hover:text-[#f5ede0] transition w-full sm:w-[200px] h-14">

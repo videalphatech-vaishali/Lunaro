@@ -234,6 +234,12 @@
       Choose from our suite of professional trading platforms <br> designed for every trading style.
       </p>
     </div>
+              <?php 
+            // get the country from session or default to 'uk'
+            $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+            if ($country === 'uae') { 
+            ?>
+			
     <!-- Grid Container -->
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-16 w-full max-w-[80%] mx-auto">
       <!-- Meta Trader 5 Card -->
@@ -279,4 +285,58 @@
         </a>
       </div>
     </div>
+    			
+			        <?php 
+            } else { 
+            ?>
+<!-- uk content -->
+
+    <!-- Grid Container -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-16 w-full max-w-[80%] mx-auto">
+      <!-- Meta Trader 5 Card -->
+      <div class="rounded-2xl shadow-lg flex flex-col items-start overflow-hidden w-full">
+        <!-- Background -->
+        <div
+          class="w-full rounded-lg mb-6 h-[350px] md:h-[420px] relative">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mt5.png" alt="Meta Trader 5"
+            class="absolute top-0 right-100 object-contain w-full sm:w-[520px] h-full md:h-[480px]">
+        </div>
+        <!-- Title -->
+        <h3 class="text-3xl font-bold mt-4 mb-4 text-white relative z-10">Meta Trader 5</h3>
+        <!-- Features List -->
+        <ul class="text-gray-300 text-sm space-y-2 mb-6 list-disc list-inside relative z-10">
+          <li>Advanced charting tools</li>
+          <li>Expert Advisors</li>
+          <li>One-click trading</li>
+        </ul>
+        <!-- Link -->
+        <a href="meta-trader-5" class="text-white hover:underline font-medium relative z-10">
+          Learn about the Lunaro Meta Trader 5→
+        </a>
+      </div>
+      <!-- Mobile App Card -->
+      <div class="rounded-2xl shadow-lg flex flex-col items-start overflow-hidden w-full">
+        <!-- Background -->
+        <div
+          class="w-full rounded-lg mb-6 h-[350px] md:h-[420px] relative">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mobile-cqg.png" alt="Mobile App"
+            class="absolute top-0 right-100 object-contain w-full sm:w-[520px] h-full md:h-[480px]">
+        </div>
+        <!-- Title -->
+        <h3 class="text-3xl font-bold mt-4 mb-4 text-white relative z-10">Mobile App</h3>
+        <!-- Features List -->
+        <ul class="text-gray-300 text-sm space-y-2 mb-6 list-disc list-inside relative z-10">
+          <li>Trade on-the-go</li>
+          <li>Push Notifications</li>
+          <li>Advanced analytics</li>
+        </ul>
+        <!-- Link -->
+        <a href="#" class="text-white hover:underline font-medium relative z-10">
+          Learn about the Lunaro mobile app →
+        </a>
+      </div>
+    </div>
+
+			
+   <?php } ?>
   </section>
