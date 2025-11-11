@@ -960,9 +960,9 @@
             <div class="lunaro-text">
                 <h1>Lunaro Pro</h1>
                 <p>
-                    Unlock professional-grade tools designed for active traders. Access enhanced leverage, reduced
-                    margins,
-                    and dedicated account support that serious traders demand.
+                    Unlock Institutional-grade tools designed for professional
+                    traders. Access enhanced leverage, reduced margins and dedicated
+                    account support that serious traders demand
                 </p>
             </div>
 
@@ -985,7 +985,7 @@
         <div class="benefits-list">
             <div class="benefit-item">
                 <div class="benefit-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/message-chat-circle.png" alt=""></div>
-                <div class="benefit-text">Enhanced leverage up to 1:500 on major pairs</div>
+                <div class="benefit-text">Enhanced leverage up to 250:1 on major pairs</div>
             </div>
             <div class="benefit-item">
                 <div class="benefit-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bar-chart-07.png" alt=""></div>
@@ -1008,7 +1008,11 @@
       <div class="article">
     <div class="article-feature">
       <h2>Higher Leverage</h2>
-      <p>Trade with enhanced leverage ratios up to 150:1 on major currency pairs and 1500:1 on indices, allowing you to maximize capital efficiency and trading opportunities. Please note that while higher leverage increases profit potential, it equally amplifies potential losses.</p>
+      <p>Trade with enhanced leverage ratios up to 250:1 on
+         major currency pairs and 250:1 on indices, allowing you to maximise
+         capital efficiency and trading opportunities. Please note that while
+         higher leverage increases profit potential, it equally amplifies potential
+         losses</p>
     </div>
 
     <div class="article-feature">
@@ -1081,8 +1085,8 @@
             </div>
             <div class="service-content">
                 <h3>Dedicated Relationship Manager</h3>
-                <p>Receive personalized service from your assigned relationship manager who understands your trading
-                    style and provides tailored market insights and account optimization.</p>
+                <p>Receive personalised service from your assigned relationship manager who understands your trading
+                    style and provides tailored market insights and account optimisation.</p>
             </div>
         </div>
 
@@ -1125,7 +1129,7 @@
                 <p class="desc">For teams to grow with clarity, consistency, and cost efficiency.</p>
                 <button>Get Started</button>
                 <ul class="features">
-                    <li>Maximum Leverage: 1:30 (FCA Retail Limit)</li>
+                    <li>Maximum Leverage: 1 (FCA Retail Limit)</li>
                     <li>Minimum Spread: From 0.34 pips</li>
                     <li>Rebate: No rebate</li>
                     <li>Margin Requirements: 3.33% minimum</li>
@@ -1142,10 +1146,10 @@
                 <p class="desc">For teams aiming with performance, precision, and strategy.</p>
                 <button class="professional-btn">Create Professional Account</button>
                 <ul class="features lunaro-features">
-                    <li>Maximum Leverage: Up to 1:500</li>
+                    <li>Maximum Leverage: Up to 2</li>
                     <li>Minimum Spread: From 0.34 pips</li>
                     <li>Rebate: Up to 33.3%</li>
-                    <li>Margin Requirements: From 0.2%</li>
+                    <li>Margin Requirements: From 3%</li>
                     <li>Account Manager: Dedicated relationship manager</li>
                     <li>Advanced Tools: Professional trading suite</li>
                     <li>Market Access: Additional professional products</li>

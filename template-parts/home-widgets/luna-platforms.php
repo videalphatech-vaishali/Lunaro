@@ -260,7 +260,7 @@
         </ul>
         <!-- Link -->
         <a href="meta-trader-5" class="text-white hover:underline font-medium relative z-10">
-          Learn about the Lunaro Meta Trader 5→
+          Learn about Meta Trader 5→
         </a>
       </div>
       <!-- Mobile App Card -->
@@ -311,7 +311,7 @@
         </ul>
         <!-- Link -->
         <a href="meta-trader-5" class="text-white hover:underline font-medium relative z-10">
-          Learn about the Lunaro Meta Trader 5→
+          Learn about Meta Trader 5→
         </a>
       </div>
       <!-- Mobile App Card -->
@@ -332,7 +332,7 @@
         </ul>
         <!-- Link -->
         <a href="#" class="text-white hover:underline font-medium relative z-10">
-          Learn about the Lunaro mobile app →
+          Learn about mobile app →
         </a>
       </div>
     </div>

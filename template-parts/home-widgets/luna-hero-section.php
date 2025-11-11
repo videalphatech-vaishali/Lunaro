@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Platforms | Lunaro Markets</title>
+  <title>Lunaro </title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -334,9 +334,9 @@
             } else { 
             ?>
       <div class="hero-text">
-        <h1>Trade Forex, CFDs, Spread Betting and Global Markets <br>  with Confidence</h1>
+        <h1>Trade Forex, CFDs, Spread Bets and Global Markets <br>  with Confidence</h1>
         <p>
-         Trade CFDs on 80+ forex pairs, global indices, commodities and shares through our award-winning trading platforms. Join thousands of traders who choose Lunaro Markets for competitive spreads, fast execution and professional support.
+         Trade CFDs on 80+ forex pairs, global indices, commodities and shares through our award-winning trading platforms. Join thousands of traders who choose Lunaro for competitive spreads, fast execution and professional support.
         </p>
         <div class="button-group">
           <button class="btn-filled signup">Start Trading</button>

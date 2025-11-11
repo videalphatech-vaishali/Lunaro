@@ -421,7 +421,8 @@
           <div class="step-number">2</div>
           <div class="step-content">
             <h3>Submit Application</h3>
-            <p>Complete our professional account application with documentation including portfolio statements and credentials.</p>
+            <p>If you are already a Retail client, complete our professional account application with supporting 
+               documentation including portfolio statements and professional credentials. </p>
           </div>
         </div>
 
@@ -429,7 +430,7 @@
           <div class="step-number">3</div>
           <div class="step-content">
             <h3>Account Activation</h3>
-            <p>Upon approval, your account will be upgraded with professional trading conditions and a dedicated relationship manager.</p>
+            <p>Upon approval, your account will be upgraded with professional trading conditions and dedicated relationship manager assignment.</p>
           </div>
         </div>
       </div>

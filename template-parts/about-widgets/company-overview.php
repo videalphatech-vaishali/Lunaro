@@ -192,8 +192,8 @@
                 Lunaro is a regulated CFD and spread betting provider dedicated to delivering transparent, reliable
                 access to global financial markets. We serve both retail and professional traders who value clear
                 pricing, advanced technology, and genuinely responsive support. Using the industry-leading MetaTrader 5
-                platform, our clients - Leverage up to 30:1 for amplified market exposureall backed by low-latency
-                execution, competitive spreads, and institutional-grade liquidity.
+                platform, our clients - Leverage up to 30:1 for amplified market exposure all backed by low-latency
+                execution, competitive spreads, and institutional-grade liquidity.<br>
                 Our approach is simple: Combine robust regulatory compliance with a personalised service model. We're
                 not just a partner, we're your trading partner.
 

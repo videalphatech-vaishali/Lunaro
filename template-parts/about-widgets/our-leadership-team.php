@@ -203,8 +203,8 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/nicholas.png" alt="">
                 </div>
                 <div class="content-cards">
-                    <h2> Nicholas Spencer-Skeen</h2>
-                    <h4>Senior Executive Officer & Executive Director</h4>
+                    <h2>Nicholas Spencer-Skeen</h2>
+                    <h4>Executive Director</h4>
                     <p>Nick brings over 40 years of experience in global financial markets, specialising in FX and
                         derivatives.
                         A former member of the Futures Industry Clearing Committee and LCH user committee, he has built
@@ -300,7 +300,7 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/philip.png" alt="">
                 </div>
                 <div class="content-cards">
-                    <h2>Philip Hoolland</h2>
+                    <h2>Philip Holland</h2>
                     <h4>Executive Director</h4>
                     <p>Phil brings over 17 years of experience in financial services, with more than 15 years in
                         trading leading operations, projects, and integrations across the business. His deep
@@ -320,7 +320,7 @@
                 </div>
                 <div class="content-cards">
                     <h2> Nicholas Spencer-Skeen</h2>
-                    <h4>Senior Executive Director</h4>
+                    <h4>Executive Officer</h4>
                     <p>Nick brings over 40 years of experience in global financial markets, specialising in FX and
                         derivatives.
                         A former member of the Futures Industry Clearing Committee and LCH user committee, he has built

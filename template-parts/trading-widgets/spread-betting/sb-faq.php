@@ -263,7 +263,7 @@
             </div>
             <h3 class="feature-title">Transparent Pricing</h3>
             <p class="feature-description">
-                No surprises. Our pricing is clear and straightforward, so you alsways know your cossts before you place
+                No surprises. Our pricing is clear and straightforward, so you always know your costs before you place
                 a trade.
                 Enjoy tight spreads with no hidden fees.
             </p>
@@ -323,7 +323,7 @@
             <div class="sb-start-trading-left">
                 <h1>Start Spread Betting Today</h1>
                 <p>
-                    Open your Lunaro Markets account and experience transparent pricing, institutional
+                    Open your Lunaro account and experience transparent pricing, institutional
                     execution, and dedicated support.
                 </p>
                 <div class="button-group">
@@ -344,7 +344,7 @@
                     <div class="icon">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lock-01.svg" alt="">
                     </div>
-                    <p><strong>Secure Funding & Withdrawals.</strong> Multiple ppayment methods, segregated client
+                    <p><strong>Secure Funding & Withdrawals.</strong> Multiple payment methods, segregated client
                         accounts, and tier-one
                         banking parnerships for your peace of mind.</p>
                 </div>

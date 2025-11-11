@@ -1,3 +1,8 @@
+
+
+
+
+
 <style>
     /* Responsive container */
     .markets-table-responsive {

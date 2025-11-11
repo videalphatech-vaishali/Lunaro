@@ -164,7 +164,7 @@
                 </h3>
                 <br>
                 <h4 style="font-weight: 700;">
-                    FSRA Regulated
+                    FCA Regulated
                 </h4>
                 <p>
                     Lunaro is authorised and regulated by the Financial Conduct Authority (FCA), ensuring compliance
@@ -178,8 +178,6 @@
                 <p>
                     All retail client funds are held in segregated accounts with tier-one banks, keeping your capital
                     separate from company operational funds in accordance with regulatory requirements.
-                    Industry Recognition
-                    Trusted by retail and professional traders across global markets
                 </p>
                 <h4 style="font-weight: 700;">
                     Industry Recognition

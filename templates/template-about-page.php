@@ -685,10 +685,29 @@ load_country_header();
                             alt="Trusted and Regulated Icon">
                     </div>
                     <h3 class="feature-title">FAQs</h3>
+                    <?php
+                        // get the country from session or default to 'uk'
+                        $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+                        if ($country === 'uae') {
+
+                    ?>
+                    <!-- uae -->
                     <p class="feature-description">
                         Find answers to common questions about our platforms, CFDs, ETDs, and how to get started with
                         Lunaro.
                     </p>
+                      <?php
+                        } else {
+
+                    ?>
+                    <!-- uk -->
+                    <p class="feature-description">
+                        Find answers to common questions about our platforms,
+                        CFDs, Spread Betting, and how to get started with Lunaro.
+                    </p>
+                      <?php
+                      }
+                    ?>
                     <a href="faqs/"> <button class="btn-primary">Read FAQs</button></a>
                 </div>
 
@@ -733,7 +752,13 @@ load_country_header();
         </section>
 
         <?php 
-    get_footer();
+      // get the country from session or default to 'uk'
+      $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+      if ($country === 'uae') { 
+         get_footer('uae');
+      } else { 
+         get_footer();
+      }
     ?>
 
 </body>

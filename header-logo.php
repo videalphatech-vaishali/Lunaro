@@ -56,6 +56,11 @@
 
     /* Top risk banner */
     .risk {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%; 
+      z-index: 999999; /* highest priority */
       background: #3C4066;
       color: #fff;
     }
@@ -579,7 +584,9 @@
     width: 95%;
     padding: 25px 20px;
   }
-
+  .retail-pro{
+    margin-top:80px;
+  }
   .popup-btns {
     flex-direction: column;
     gap: 15px;
@@ -588,6 +595,16 @@
   .popup-btn {
     width: 100%;
   }}
+
+  
+  .retail-pro{
+    margin-top:40px;
+  }
+       @media (max-width: 440px) {
+           .retail-pro{
+             margin-top:80px;
+           }
+        }
   </style>
 </head>
 
@@ -602,9 +619,11 @@
 
   </section>
 
+<div class="retail-pro">
     <?php 
     get_template_part('template-parts/retail-professional');
     ?>
+</div>
   <!-- Header -->
   <header class="header" role="banner">
     <div class="header-inner">

@@ -552,9 +552,9 @@
             <div class="lunaro-text">
                 <h1>Lunaro Pro</h1>
                 <p>
-                    Unlock professional-grade tools designed for active traders. Access enhanced leverage, reduced
-                    margins,
-                    and dedicated account support that serious traders demand.
+                    Unlock Institutional-grade tools designed for professional
+                    traders. Access enhanced leverage, reduced margins and dedicated
+                    account support that serious traders demand
                 </p>
             </div>
 
@@ -577,7 +577,7 @@
         <div class="benefits-list">
             <div class="benefit-item">
                 <div class="benefit-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/message-chat-circle.png" alt=""></div>
-                <div class="benefit-text">Enhanced leverage up to 1:500 on major pairs</div>
+                <div class="benefit-text">Enhanced leverage up to 250:1 on major pairs</div>
             </div>
             <div class="benefit-item">
                 <div class="benefit-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bar-chart-07.png" alt=""></div>
@@ -599,13 +599,17 @@
 
       <div class="article">
     <div class="article-feature">
-      <h2>Higher Leverage</h2>
-      <p>Trade with enhanced leverage ratios up to 150:1 on major currency pairs and 1500:1 on indices, allowing you to maximize capital efficiency and trading opportunities. Please note that while higher leverage increases profit potential, it equally amplifies potential losses.</p>
+      <h2>Higher Leverage Access</h2>
+      <p>Trade with enhanced leverage ratios up to 250:1 on
+        major currency pairs and 250:1 on indices, allowing you to maximise
+        capital efficiency and trading opportunities. Please note that while
+        higher leverage increases profit potential, it equally amplifies potential
+        losses.</p>
     </div>
 
     <div class="article-feature">
       <h2>Reduced Margin Requirements</h2>
-      <p>Benefit from significantly lower margin requirements starting from 0.4% on major forex pairs, enabling you to diversify positions and optimize portfolio allocation.</p>
+      <p>Benefit from significantly lower margin requirements starting from 0.4% on major forex pairs, enabling you to diversify positions and optimise portfolio allocation.</p>
     </div>
 
     <div class="article-feature">
@@ -629,8 +633,8 @@
             </div>
             <div class="service-content">
                 <h3>Dedicated Relationship Manager</h3>
-                <p>Receive personalized service from your assigned relationship manager who understands your trading
-                    style and provides tailored market insights and account optimization.</p>
+                <p>Receive personalised service from your assigned relationship manager who understands your trading
+                    style and provides tailored market insights and account optimisation.</p>
             </div>
         </div>
 

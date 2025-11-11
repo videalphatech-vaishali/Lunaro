@@ -1678,8 +1678,8 @@ video {
        <div class="w-[65%] text-2xl font-bold"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-vertical.png" alt="Logo"></div>
      <div class="flex space-x-6 mt-12 w-full justify-around">
           <a href="https://x.com/LunaroMarkets" target ="_blank" class="text-gray-400 hover:text-white ml-0" ><i class="fab fa-x-twitter" style="height:20px; width:20px"></i></a>
-          <a href="https://www.facebook.com/Lunarouk/" target ="_blank" class="text-gray-400 hover:text-white ml-0" style="height:20px; width:20px"><i class="fab fa-facebook" style="height:20px; width:20px"></i> </a>
-          <a href="https://www.instagram.com/lunaro_uk/" target ="_blank" class="text-gray-400 hover:text-white ml-0" style="height:20px; width:20px"><i class="fab fa-instagram" style="height:20px; width:20px"></i></a>
+          <a href="https://www.facebook.com/Lunarouae/" target ="_blank" class="text-gray-400 hover:text-white ml-0" style="height:20px; width:20px"><i class="fab fa-facebook" style="height:20px; width:20px"></i> </a>
+          <a href="https://www.instagram.com/lunaro_uae/" target ="_blank" class="text-gray-400 hover:text-white ml-0" style="height:20px; width:20px"><i class="fab fa-instagram" style="height:20px; width:20px"></i></a>
           <a href="https://www.linkedin.com/company/71724909" target ="_blank" class="text-gray-400 hover:text-white ml-0" style="height:20px; width:20px"><i class="fab fa-linkedin" style="height:20px; width:20px"></i></a>
               <a href="https://www.youtube.com/@LunaroMarkets"  target ="_blank" class="text-gray-400 hover:text-white ml-0" style="height:20px; width:20px"><i class="fab fa-youtube" style="height:20px; width:20px"></i></a>
         </div>
@@ -1691,7 +1691,7 @@ video {
       <ul class="space-y-2 text-sm text-gray-400">
         <li><a href="/about-overview" class="hover:text-white">About Us</a></li>
         <li><a href="/faqs" class="hover:text-white">FAQs</a></li>
-        <li><a href="pricing-and-fees/" class="hover:text-white">Pricing & Fees</a></li>
+        <!-- <li><a href="pricing-and-fees/" class="hover:text-white">Pricing & Fees</a></li> -->
         <!-- <li><a href="#" class="hover:text-white">Affiliate Program</a></li> -->
         <li><a href="/contact-us" class="hover:text-white">Contact Us</a></li>
       </ul>
@@ -1701,8 +1701,11 @@ video {
     <div class="w-full md:w-auto">
       <h4 class="font-semibold mb-4">Trading</h4>
       <ul class="space-y-2 text-sm text-gray-400">
-        <li><a href="/spread-betting" class="hover:text-white">Spread Betting</a></li> 
          <li><a href="/cfd-trading" class="hover:text-white">CFD Trading</a></li>
+        <li><a href="/etd-trading" class="hover:text-white">ETD Trading</a></li> 
+        <li><a href="/cme-futures" class="hover:text-white">CME Group Futures</a></li> 
+        <li><a href="/cme-options" class="hover:text-white">CME Group Options</a></li> 
+
       </ul>
     </div>
 
@@ -1724,6 +1727,9 @@ video {
       <h4 class="font-semibold mb-4">Platforms</h4>
       <ul class="space-y-2 text-sm text-gray-400">
         <li><a href="/meta-trader-5" class="hover:text-white">Meta Trader</a></li>
+        <li><a href="/cqg" class="hover:text-white">CQG</a></li>
+        <li><a href="/trading-technologies" class="hover:text-white">TT</a></li>
+        <li><a href="/rithmic" class="hover:text-white">Rithmic</a></li>
       </ul>
     </div>
 
