@@ -69,6 +69,11 @@
         margin-top: 4px;
     }
 
+    .note {
+        font-size: 0.7em;
+        line-height: 1;
+    }
+
 
     /* Responsive */
     @media (max-width: 900px) {
@@ -94,14 +99,16 @@
                 <i class="fa-solid fa-check-circle"></i>
                 <div class="column-right-text">
                     <span>Direct Exposure to Company Performance</span>
-                    <p>Your position reflects the success or failure of specific businesses. Backing companies you understand and believe in can be more engaging than trading broader market instruments.</p>
+                    <p>Your position reflects the success or failure of specific businesses. Backing companies you
+                        understand and believe in can be more engaging than trading broader market instruments.</p>
                 </div>
             </div>
             <div class="advantage-item">
                 <i class="fa-solid fa-check-circle"></i>
                 <div class="column-right-text">
                     <span>Potential for Higher Returns Through Active Trading</span>
-                    <p>Individual shares often move more dramatically than indices, creating opportunities for traders who can identify mispriced stocks or capitalise on earnings momentum.
+                    <p>Individual shares often move more dramatically than indices, creating opportunities for traders
+                        who can identify mispriced stocks or capitalise on earnings momentum.
                     </p>
                 </div>
             </div>
@@ -109,7 +116,8 @@
                 <i class="fa-solid fa-check-circle"></i>
                 <div class="column-right-text">
                     <span>Responsive to Earnings and Company News</span>
-                    <p>Share prices react immediately to quarterly results, guidance updates, product announcements, and sector developments, providing numerous catalysts for informed trading decisions.
+                    <p>Share prices react immediately to quarterly results, guidance updates, product announcements, and
+                        sector developments, providing numerous catalysts for informed trading decisions.
                     </p>
                 </div>
             </div>
@@ -117,9 +125,19 @@
                 <i class="fa-solid fa-check-circle"></i>
                 <div class="column-right-text">
                     <span>Multiple Access Methods: Exchange Traded Derivatives and CFDs</span>
-                    <p>Trade shares through tax-efficient ETDs (UAE) or flexible CFD trading, both offering leverage, short-selling capability, and no stamp duty on purchases. </p>
+                    <p>Trade shares through tax-efficient ETDs (UAE) or flexible CFD trading, both offering leverage,
+                        short-selling capability, and no stamp duty on purchases. </p>
                 </div>
             </div>
+            <span class="note">
+                *Please note that the tax treatment for CFD and SB may different. CFDs are not exempt from CGT. Spread
+                Betting is
+                currently free from Capital Gains Tax (CGT) and there is no stamp duty in the United Kingdom. It should
+                be noted
+                that tax treatment depends on your individual circumstances and may be subject to change in the future.
+                Tax law can
+                be changed or may differ if you pay tax in a jurisdiction other than the UK.
+            </span>
         </div>
         <div class="right-side">
             <h2>Key Risks of Share Trading</h2>
@@ -127,7 +145,8 @@
                 <i class="fa-solid fa-check-circle"></i>
                 <div class="column-right-text">
                     <span>Individual Company Volatility Can Lead to Significant Losses</span>
-                    <p>Unlike diversified indices, a single company's shares can plummet on disappointing news or competitive threats, potentially causing substantial losses.</p>
+                    <p>Unlike diversified indices, a single company's shares can plummet on disappointing news or
+                        competitive threats, potentially causing substantial losses.</p>
                 </div>
             </div>
             <div class="advantage-item">
@@ -135,7 +154,8 @@
                 <div class="column-right-text">
                     <span>High Price Swings Can Result in Rapid Position Changes</span>
                     <p>
-                       Shares frequently experience intraday volatility, especially for growth stocks or during earnings season, requiring careful position sizing and risk management.</p>
+                        Shares frequently experience intraday volatility, especially for growth stocks or during
+                        earnings season, requiring careful position sizing and risk management.</p>
                 </div>
             </div>
             <div class="advantage-item">
@@ -143,14 +163,16 @@
                 <div class="column-right-text">
                     <span>Earnings Announcements Can Cause Sharp Movements</span>
                     <p>
-                       Quarterly results often trigger immediate price moves. Trading through earnings carries elevated risk and requires appropriate stop-loss strategies.</p>
+                        Quarterly results often trigger immediate price moves. Trading through earnings carries elevated
+                        risk and requires appropriate stop-loss strategies.</p>
                 </div>
             </div>
-             <div class="advantage-item">
+            <div class="advantage-item">
                 <i class="fa-solid fa-check-circle"></i>
                 <div class="column-right-text">
                     <span>Leverage Magnifies Both Gains and Losses</span>
-                    <p>While leverage allows you to control larger positions with less capital, adverse price movements are equally amplified. </p>
+                    <p>While leverage allows you to control larger positions with less capital, adverse price movements
+                        are equally amplified. </p>
                 </div>
             </div>
         </div>

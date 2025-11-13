@@ -9,13 +9,10 @@
 load_country_header();
 ?>
 <style>
-    body.admin-bar .your-header-class {
-        margin-top: 200px;
-    }
+ 
 
     body {
-        background-color: white !important;
-        margin: 0;
+        background-color: white !important; 
         font-family: Arial, sans-serif;
     }
 </style>

@@ -33,6 +33,11 @@
             gap: 80px;
         }
 
+        .note {
+            font-size: 0.7em; 
+            line-height: 1;
+        }
+
         .company-card {
             max-width: 500px;
             gap: 1rem;
@@ -113,17 +118,22 @@
                 <!-- UK content -->
                 <p>
                     Share trading gives you ownership stakes in individual companies, allowing you to trade on their
-                    performance and potentially profit from price movements.
-                    Whether you're interested in technology
+                    performance and potentially profit from price movements. Whether you're interested in technology
                     giants like Apple, Nvidia and Microsoft, electric vehicle innovators like Tesla, or established
-                    blue-chip corporations, Trading CFDs and spread bets on Shares
-                    provides direct exposure to company-specific
-                    growth and market dynamics.<br>
+                    blue-chip corporations, Trading CFDs and spread bets on Shares provides direct exposure to
+                    company-specific growth and market dynamics.<br>
+
                     Multiple Access Methods: Spread Betting and CFDs<br>
                     Trade shares through tax-efficient spread betting (UK) or flexible CFD* trading, both offering
                     leverage, short-selling capability, and no stamp duty on purchases.<br>
-                    *Spread Betting is currently free from Capital Gains Tax (CGT) and there is no stamp duty in the
-                    United Kingdom.
+                    <span class="note">
+                        *Please note that the tax treatment for CFD and SB may differ. CFDs are not exempt from CGT.
+                        Spread Betting is currently free from Capital Gains Tax (CGT) and there is no stamp duty in the
+                        United Kingdom. It should be noted that tax treatment depends on your individual circumstances
+                        and
+                        may be subject to change in the future. Tax law can be changed or may differ if you pay tax in a
+                        jurisdiction other than the UK.
+                    </span>
                 </p>
                 <?php } ?>
 

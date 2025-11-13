@@ -1745,17 +1745,14 @@ video {
 
 
   
+
   <div class="risk-warining">
-<p><strong>Risk Warning:</strong>CFDs and spread bets are complex instruments and come with a high risk of losing money rapidly due to leverage.</p>
-<p><strong>Approximately 80% of retail client accounts lose money when trading in CFDs and spread bets.</strong></p>
-<p>You should consider whether you understand how CFDs and spread bets work and whether you can afford to take the high risk of losing your money.</p>  
-<p>Lunaro is a Trading name of Lunaro Financial Services Limited.</p>
-<p>Lunaro Financial Services Limited is a company registered in England and Wales under register number 03148972. Lunaro Financial Services Limited is authorized and regulated by the Financial Conduct Authority, FCA Register number 184333.</p>
-<p>Registered Address: 16 Great Queen Street, Convent Garden, London, United Kingdom, WC2B5AH</p>
-<p>†Spread Betting is currently free from Capital Gains Tax (CGT) and there is no stamp duty in the United Kingdom. It should be noted that tax treatment depends on your individual circumstances and may be subject to change in the future. Tax law can be changed or may differ if you pay tax in a jurisdiction other than the UK.</p>
-<p>Disclaimer</p>
-<p>The information on this site is not directed nor is intended for distribution to, or use by, any person in any country or jurisdiction where such distribution or use would be contrary to local laws or regulations. Such residents and countries include, but are not limited to, the United States.</p>
-<p>Apple, the Apple logo, iPod, iPad, iPod touch, and iTunes are trademarks of Apple Inc., registered in the US and other countries. iPhone is a trademark of Apple Inc. App Store is a service mark of Apple Inc.</p>
+<p><strong>Risk Warning:</strong>Trading Leveraged Products carries significant risk and can result in losses which exceed deposits. Trading leveraged products may not be suitable for everyone, so please ensure that you fully understand the risks involved and take care to manage your exposure. You have no ownership of the underlying asset.</p>
+<p>Lunaro Markets Limited (“Lunaro”) does not issue advice, recommendations, or opinions in relation to acquiring, holding, or disposing of OTC derivatives or any other leveraged products, nor is Lunaro a financial advisor. All services are provided on an execution-only basis.</p>
+<p>Lunaro Markets Limited is registered in Abu Dhabi Global Market with the registered number 000005466, and its registered office is at 1009, Floor 10, Al Khatem Tower, Abu Dhabi Global Market Square, Al Maryah Island, Abu Dhabi, United Arab Emirates.</p>  
+<p>Lunaro Markets Limited is authorised and regulated by the Financial Services Regulatory Authority (FSRA) in the Abu Dhabi Global Market: FSP Number 200034.
+</p>
+<p>The information on this site is not intended for use by any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation. © 2025 Lunaro Markets Limited. All rights reserved.</p>
 </div>
 
   <!-- Bottom Bar -->

@@ -103,6 +103,13 @@
             color: rgba(255, 244, 228, 0.9);
             margin: 0;
         }
+        .rs-disclamair p {
+            font-size: 0.8rem;
+            line-height: 1.7;
+            font-weight: 300;
+            color: rgba(255, 244, 228, 0.9);
+            margin: 0;
+        }
 
         .advantage-item {
             display: flex;
@@ -225,6 +232,7 @@
                     <p>Gain direct exposure to shares, indices, forex pairs, commodities, interest rates, and more, all from a single spread betting account.</p>
                 </div>
             </div>
+            <div class="rs-disclamair"><p>**Spread Betting is currently free from Capital Gains Tax (CGT) and there is no stamp duty in the United Kingdom. Please note that tax treatment depends on your individual circumstances and may change in the future. Tax laws can be altered or may differ if you pay tax in a jurisdiction other than the UK.</p></div>
         </div>
     </div>
 </body>

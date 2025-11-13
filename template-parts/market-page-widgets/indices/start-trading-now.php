@@ -233,13 +233,15 @@
                     <div class="icon">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lightning-01.svg" alt="">
                     </div>
-
-
                     <p><strong>Instant access to major gloabal indices.</strong> <br>
                         Trade UK, US, European, and Asia-Pacific benchmarks from a single account.
                     </p>
                 </div>
-
+               <?php 
+                 // get the country from session or default to 'uk'
+                 $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+                 if ($country === 'uae') { 
+               ?>
                 <div class="feature">
                     <div class="icon">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lock-01.svg" alt="">
@@ -249,6 +251,9 @@
                     </p>
                 </div>
 
+               <?php 
+                 } 
+               ?>
                 <div class="feature">
                     <div class="icon">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/message-chat-square.svg"

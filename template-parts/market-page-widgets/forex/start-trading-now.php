@@ -139,13 +139,17 @@
             }
         }
     </style>
+      <?php 
+    // get the country from session or default to 'uk'
+    $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+    if ($country === 'uae') { 
+  ?>
     <section class="forex-start-trading-section">
         <div class="forex-start-trading-container">
             <!-- Left Content -->
             <div class="forex-start-trading-left">
                 <h1>Start trading now</h1>
-                <p>Open your Lunaro Markets account today and gain access to the world's most recognized forex with
-                    transparent pricing and professional execution.
+                <p>Open your Lunaro account today and access the world's largest financial market with institutional-grade execution and transparent pricing.
                 </p>
                 <div class="button-group">
                     <button class="signup btn-primary">Start trading</button>
@@ -186,6 +190,51 @@
             </div>
         </div>
     </section>
+  <?php 
+    } else { 
+  ?>
+    <section class="forex-start-trading-section">
+        <div class="forex-start-trading-container">
+            <!-- Left Content -->
+            <div class="forex-start-trading-left">
+                <h1>Start trading now</h1>
+                <p>Open your Lunaro Markets account today and gain access to the world's most recognized forex with
+                    transparent pricing and professional execution.
+                </p>
+                <div class="button-group">
+                    <button class="signup btn-primary">Start trading</button>
+                </div>
+            </div>
+
+            <!-- Right Features -->
+            <div class="forex-start-trading-right">
+                <div class="feature">
+                    <div class="icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lightning-01.svg" alt="">
+                    </div>
+
+
+                    <p><strong>Trade dozens Major, Minor, and Exotic Pairs</strong> <br>
+                        From EUR/USD to emerging market currencies, access a wide range of trading oppurtunities.
+                    </p>
+                </div>
+
+                <div class="feature">
+                    <div class="icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/message-chat-square.svg"
+                            alt="">
+                    </div>
+                    <p><strong>Spreads from Just 0.7 Pips.</strong><br>
+                        Competitive transparent pricing on major pairs keeps your trading costs low and predictable.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+  <?php 
+    } 
+  ?>
+
 </body>
 
 </html>

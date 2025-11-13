@@ -57,19 +57,16 @@
 
                 <p>
                     The foreign exchange market (Forex or FX) is the world's largest and most liquid financial
-                    marketplace, with over $6.6 trillion traded daily.
-                    Forex trading involves buying one currency while simultaneously selling another, with exchange rates
-                    determined by global supply and demand,
-                    economic data releases, central bank policies, and geopolitical developments. Unlike stock markets,
-                    Forex operates 24 hours a day, five days
-                    a week, across major financial centers in London, New York, Tokyo, and Sydney. This continuous
-                    trading cycle means you can respond to breaking
-                    news and market shifts in real-time, regardless of your time zone. Forex attracts traders of all
-                    experience levels, from short-term scalpers
-                    capturing pip movements to long-term position traders analyzing macroeconomic trends. Whether you're
-                    trading major pairs like EUR/USD or
-                    exploring emerging market currencies, the Forex market provides deep liquidity, tight spreads, and
-                    diverse opportunities.
+                    marketplace, with over $7.5 trillion traded daily. Forex trading involves buying one currency while
+                    simultaneously selling another, with exchange rates determined by global supply and demand, economic
+                    data releases, central bank policies, and geopolitical developments.
+                    Unlike stock markets, Forex operates 24 hours a day, five days a week, across major financial
+                    centres in London, New York, Tokyo, and Sydney. This continuous trading cycle means you can respond
+                    to breaking news and market shifts in real time, regardless of your time zone.
+                    Forex attracts traders of all experience levels, from short-term scalpers capturing pip movements to
+                    long-term position traders analysing macroeconomic trends. Whether you're trading major pairs like
+                    EUR/USD or exploring emerging market currencies, the Forex market provides deep liquidity, tight
+                    spreads, and diverse opportunities.
                 </p>
                 <?php 
             } else { 
@@ -79,15 +76,12 @@
                     The foreign exchange market (Forex or FX) is the world's largest and most liquid financial
                     marketplace, with over $7.5 trillion traded daily.
                     Forex trading involves buying one currency while simultaneously selling another, with exchange rates
-                    determined by global supply and demand,
-                    economic data releases, central bank policies, and geopolitical developments. Unlike stock markets,
-                    Forex operates 24 hours a day, five days
-                    a week, across major financial centers in London, New York, Tokyo, and Sydney. This continuous
-                    trading cycle means you can respond to
-                    breaking news and market shifts in real-time, regardless of your time zone. Forex attracts traders
-                    of all experience levels, from short-term
-                    scalpers capturing pip movements to long-term position traders analyzing macroeconomic trends.
-                    Whether you're trading major pairs like
+                    determined by global supply and demand, economic data releases, central bank policies, and
+                    geopolitical developments. Unlike stock markets, Forex operates 24 hours a day, five days a week,
+                    across major financial centres in London, New York, Tokyo, and Sydney. This continuous trading cycle
+                    means you can respond to breaking news and market shifts in real-time, regardless of your time zone.
+                    Forex attracts traders of all experience levels, from short-term scalpers capturing pip movements to
+                    long-term position traders analysing macroeconomic trends. Whether you're trading major pairs like
                     EUR/USD or exploring emerging market currencies, the Forex market provides deep liquidity, tight
                     spreads, and diverse opportunities.
                 </p>

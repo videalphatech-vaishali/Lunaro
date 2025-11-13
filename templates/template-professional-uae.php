@@ -450,7 +450,7 @@
         <em class="em">Regulatory Overview: Professional client classification requires meeting at least two of three criteria established by the Financial Conduct Authority (FCA) in addition to a qualitative assessment.</em>
       </p>
       <div class="buttons">
-        <button class="btn-eligible">I am eligible</button>
+       <a href="/lunaro-benefits-uae"> <button class="btn-eligible">I am eligible</button></a>
         <button class="btn-not">I am not eligible</button>
       </div>
     </div>

@@ -123,21 +123,103 @@
                 display: none;
             }
         }
+        /* /////////////////////////////////////// */
+            /* Fixed Risk Banner */
+    .risk {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #3C4066;
+      color: #fff;
+      z-index: 999999;
+      padding: 10px 15px;
+      font-size: 14px;
+      line-height: 1.5;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Keep page content visible below banner */
+    body {
+      padding-top: 28px; /* Adjust based on banner height */
+    }
+
+
+
+    .risk p {
+      text-align: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      word-wrap: break-word;
+    }
+
+
+    /* Mobile: smaller font, more spacing */
+    @media (max-width: 575.98px) {
+      .risk {
+        padding: 12px 10px;
+        font-size: 12px;
+      }
+      .risk p {
+        text-align: left;
+      }
+    }
+
+    /* Tablet */
+    @media (min-width: 576px) and (max-width: 991.98px) {
+      .risk {
+        padding: 12px 20px;
+        font-size: 13px;
+      }
+    }
+
+    /* Desktop large screens */
+    @media (min-width: 992px) {
+      .risk {
+        font-size: 14px;
+        padding: 12px 30px;
+      }
+    }
     </style>
 </head>
 <body>
+  <?php 
+    // get the country from session or default to 'uk'
+    $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+    if ($country === 'uae') { 
+  ?>
+    <section class="risk">
+      <p>
+      <strong>Risk Warning:</strong> Trading CFDs and FX carries significant risk. 
+        OTC derivatives are leveraged products and can result in losses which exceed deposits.
+      </p>
+    </section>
+  <?php 
+    } else { 
+  ?>
+    <section class="risk">
+      <p>
+        <strong>Risk Warning:</strong> CFDs and spread bets are complex instruments and come with a high risk of losing money rapidly due to leverage.<br> 
+       <strong>Approximately 80% of retail client accounts lose money when trading in CFDs and spread bets.</strong><br>
+       You should consider whether you understand how CFDs and spread bets work and whether you can afford to take the high risk of losing your money.
+      </p>
+    </section>
+  <?php 
+    } 
+  ?>
+
     <header class="top-bar">
         <!-- LEFT TABS -->
         <div class="tabs">
             <a href="<?php echo home_url(); ?>"> <button class="tab active" id="retailTab">Retail</button></a>
             <?php 
-$country = $_SESSION['country'] ?? 'uk';
-// Define links
-$links = [
-    'uae' => '/lunaro-pro-uae',
-    'uk'  => '/lunaro-pro-uk'
-];
-?>
+              $country = $_SESSION['country'] ?? 'uk';
+              // Define links
+              $links = [
+                  'uae' => '/lunaro-pro-uae',
+                  'uk'  => '/lunaro-pro-uk'
+              ];
+              ?>
             <a href="<?php echo $links[$country]; ?>">
                 <button class="tab" id="professionalTab">Professional</button>
             </a>
@@ -216,6 +298,24 @@ $links = [
             }
         });
     </script>
+<script>
+function adjustBodyPadding() {
+  const risk = document.querySelector('.risk');
+  if (risk) {
+    const height = risk.offsetHeight;
+    document.body.style.paddingTop = height + 'px';
+  }
+}
+
+// Adjust on page load
+window.addEventListener('load', adjustBodyPadding);
+
+// Adjust on resize or orientation change (for mobile)
+window.addEventListener('resize', adjustBodyPadding);
+window.addEventListener('orientationchange', adjustBodyPadding);
+</script>
+
+
 </body>
 
 </html>

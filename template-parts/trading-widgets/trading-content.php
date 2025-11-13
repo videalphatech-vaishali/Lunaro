@@ -765,7 +765,7 @@
         <div class="option-heading">
             <h2>Trading options</h2>
             <p>Discover the two primary ways to trade financial markets with Lunaro Markets. Each method offers unique
-                advantages and is designed to suit different trading styles and objectives.</p>
+                advantages and is<br/> designed to suit different trading styles and objectives.</p>
         </div>
 
         <div class="trade-option-card">
@@ -776,12 +776,29 @@
                 <a href="/cfd-trading"><button>Learn more about CFD Trading</button></a>
             </div>
 
-            <!-- Card 2 -->
-            <div class="card-body">
-                <h2>Exchange Trade Derivates</h2>
-                <p>Schedule a consultation with one of our specialists to address all your inquiries.</p>
-               <a href="/etd-trading"> <button>Learn more about ETDs</button></a>
-            </div>
+            <?php
+            
+                $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+                if ($country === 'uae') { 
+                    ?>
+                        <!-- Card 2 UAE -->
+                        <div class="card-body">
+                            <h2>Exchange Trade Derivates</h2>
+                            <p>Schedule a consultation with one of our specialists to address all your inquiries.</p>
+                           <a href="/etd-trading"> <button>Learn more about ETDs</button></a>
+                        </div>
+            <?php
+            }else{
+                ?>
+                            <!-- Card 2 UK-->
+                        <div class="card-body">
+                            <h2>Spread Betting</h2>
+                            <p>Schedule a consultation with one of our specialists to address all your inquiries.</p>
+                           <a href="/spread-betting"> <button>Learn more about Spread Betting</button></a>
+                        </div>
+            <?php
+            }
+            ?>
         </div>
     </div>
 
@@ -789,21 +806,21 @@
     <div class="kf-section">
         <!-- Text Section -->
         <div class="kf-textsection">
-            <h2>Key features and benefits</h2>
+            <h2>Key benefits and risks of CFD Trading</h2>
             <p>New to trading? Check out our beginner's guide to get started with your first trade.</p>
             <button class="signup">Open an Account Today</button>
         </div>
 
         <!-- Card Section -->
         <div class="kf-cardsection">
+            <h5 style="color:white">Benefits:</h5>
             <div class="kf-card">
                 <div class="card-icon">
                 <i class="fa-solid fa-check-circle"></i>
                 </div>
                 <div class="card-text">
-                    <h5>Comprehensive Learning Resources</h5>
-                    <p>Access our library of trading guides, video tutorials, and market analysis reports created by
-                        experienced professionals with decades of market expertise.</p>
+                    
+                    <p>Access to global markets without owning underlying assets</p>
                 </div>
             </div>
 
@@ -812,9 +829,7 @@
                     <i class="fa-solid fa-check-circle"></i>
                 </div>
                 <div class="card-text">
-                    <h5>Expert Market Analysis</h5>
-                    <p>Get timely and in-depth market insights to help you make informed trading decisions, no matter
-                        your experience level.</p>
+                    <p>Leverage up to 1:30 for amplified market exposure</p>
                 </div>
             </div>
 
@@ -823,13 +838,221 @@
                     <i class="fa-solid fa-check-circle"></i>
                 </div>
                 <div class="card-text">
-                    <h5>Interactive Learning Tools</h5>
-                    <p>Engage with our interactive tools and tutorials to practice strategies and learn at your own
-                        pace.</p>
+                    <p>Trade both rising and falling markets</p>
+                </div>
+            </div>
+            <div class="kf-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    <p>Tight spreads from 0.3 pips on major currency pairs</p>
+                </div>
+            </div>
+  
+            <h5 style="color:white">Risks:</h5>
+            <div class="kf-card">
+                <div class="card-icon">
+                <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    
+                    <p>Overnight financing charges apply to positions held beyond market close</p>
+                </div>
+            </div>
+
+            <div class="kf-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    <p>Market volatility can trigger margin calls requiring additional funds</p>
+                </div>
+            </div>
+
+            <div class="kf-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    <p>Leverage can amplify losses beyond your initial stake</p>
                 </div>
             </div>
         </div>
     </div>
+                <?php
+            
+                $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+                if ($country === 'uae') { 
+                    ?>
+                        <!-- UAE -->
+                              <!-- KEY features -->
+    <div class="kf-section">
+        <!-- Text Section -->
+        <div class="kf-textsection">
+            <h2>Key benefits and risks of ETDs</h2>
+            <p>New to trading? Check out our beginner's guide to get started with your first trade.</p>
+            <button class="signup">Open an Account Today</button>
+        </div>
+
+        <!-- Card Section -->
+        <div class="kf-cardsection">
+            <h5 style="color:white">Benefits:</h5>
+            <div class="kf-card">
+                <div class="card-icon">
+                <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    
+                    <p>Access to global markets without owning underlying assets</p>
+                </div>
+            </div>
+
+            <div class="kf-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    <p>Leverage up to 1:30 for amplified market exposure</p>
+                </div>
+            </div>
+
+            <div class="kf-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    <p>Trade both rising and falling markets</p>
+                </div>
+            </div>
+            <div class="kf-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    <p>Tight spreads from 0.3 pips on major currency pairs</p>
+                </div>
+            </div>
+  
+            <h5 style="color:white">Risks:</h5>
+            <div class="kf-card">
+                <div class="card-icon">
+                <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    
+                    <p>Overnight financing charges apply to positions held beyond market close</p>
+                </div>
+            </div>
+
+            <div class="kf-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    <p>Market volatility can trigger margin calls requiring additional funds</p>
+                </div>
+            </div>
+
+            <div class="kf-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    <p>Leverage can amplify losses beyond your initial stake</p>
+                </div>
+            </div>
+  
+        </div>
+    </div>
+            <?php
+            }else{
+                ?>
+                            <!-- UK-->
+                                  <!-- KEY features -->
+    <div class="kf-section">
+        <!-- Text Section -->
+        <div class="kf-textsection">
+            <h2>Key benefits and risks of Spread Betting</h2>
+            <p>Schedule a consultation with one of our specialists to address al your inquiries.</p>
+            <button class="signup">Schedule a consultation</button>
+        </div>
+
+        <!-- Card Section -->
+        <div class="kf-cardsection">
+            <h5 style="color:white">Benefits:</h5>
+            <div class="kf-card">
+                <div class="card-icon">
+                <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    
+                    <p>Tax-free trading in the UK** (capital gains tax exempt)</p>
+                </div>
+            </div>
+                        <div class="kf-card">
+                <div class="card-icon">
+                <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    
+                    <p>Flexible stake sizes from £1 per point</p>
+                </div>
+            </div>
+
+            <div class="kf-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    <p>No commission charges on most markets</p>
+                </div>
+            </div>
+
+            <div class="kf-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    <p>Direct access to thousands of global instruments</p>
+                </div>
+            </div> 
+  
+            <h5 style="color:white">Risks:</h5>
+            <div class="kf-card">
+                <div class="card-icon">
+                <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    
+                    <p>Market gaps can result in losses exceeding stop-loss levels</p>
+                </div>
+            </div>
+
+            <div class="kf-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    <p>Tax treatment may change and depends on individual circumstances</p>
+                </div>
+            </div>
+
+            <div class="kf-card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-check-circle"></i>
+                </div>
+                <div class="card-text">
+                    <p>Leverage can amplify losses beyond your initial stake</p>
+                </div>
+            </div>
+  
+        </div>
+    </div>
+            <?php
+            }
+            ?>
+
     <section style="background: linear-gradient(to bottom, #0B0D16 13.06%, #1E2F68 70.86%);">
     <!-- Assets to Trade -->
     <div class="assets-section">

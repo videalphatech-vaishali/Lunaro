@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lunaro</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lunaro</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-  <style>
-    :root {
+    <style>
+        :root {
             --bg-start: #04061C;
             --bg-mid: #1E2F68;
             --bg-accent: #D9B464;
@@ -43,6 +44,7 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             line-height: 1.4;
+            position: relative;
         }
 
         a {
@@ -57,11 +59,15 @@
 
         /* Top risk banner */
         .risk {
+
+            position: sticky;
+            top: 0;
+            width: 100%;
             background: #3C4066;
             color: #fff;
         }
 
-        .risk .container {
+        .risk .container-risk {
             text-align: center;
             font-size: 14px;
             line-height: 1.5;
@@ -156,8 +162,9 @@
             visibility: visible;
             transform: translateY(0);
         }
-        .nav-item:hover{
-            background:#FFFFFF1A;
+
+        .nav-item:hover {
+            background: #FFFFFF1A;
         }
 
         .submenu-grid {
@@ -198,12 +205,12 @@
             border-color: transparent
         }
 
-        .signup-btn{
+        .signup-btn {
             padding: 8px 16px;
             border-radius: 100px;
-            border:none;
+            border: none;
             color: #0B0D16;
-            background:#FFF4E4 !important;
+            background: #FFF4E4 !important;
             font-weight: 600;
         }
 
@@ -354,7 +361,7 @@
             }
         }
 
-    
+
         /* small visual tweaks */
         .muted {
             color: rgba(255, 255, 255, 0.85);
@@ -365,7 +372,7 @@
             height: 8px
         }
 
-        
+
 
         /* Popup Background */
         .popup {
@@ -431,7 +438,7 @@
         }
 
 
-    
+
         .main-nav a {
             position: relative;
             text-decoration: none;
@@ -452,15 +459,15 @@
 
         .main-nav a:hover::after,
         .main-nav a.active::after {
-        width: 100%;
+            width: 100%;
         }
 
-        
+
         @media (max-width: 1050px) {
-            .header-inner{
-                padding:18px 24px;
+            .header-inner {
+                padding: 18px 24px;
             }
-      
+
             nav.main-nav {
                 display: none;
             }
@@ -468,9 +475,11 @@
             .actions {
                 display: none;
             }
-             .main-nav>.nav-item{
-                padding:20px;
+
+            .main-nav>.nav-item {
+                padding: 20px;
             }
+
             .mobile-actions {
                 display: flex;
                 gap: 15px;
@@ -488,14 +497,16 @@
                 margin-left: 16px;
                 width: 400px;
             }
-             .main-nav>.nav-item{
-                padding:20px;
+
+            .main-nav>.nav-item {
+                padding: 20px;
             }
 
             .mobile-actions {
                 display: none;
             }
         }
+
         @media (min-width: 1000px) and (max-width: 1220px) {
             .actions {
                 width: 600px;
@@ -523,9 +534,7 @@
 
         @media (max-width: 720px) {
 
-            .retail-pro{
-              margin-top:80px;
-            }
+
             .submenu {
                 left: 0;
                 right: 0;
@@ -565,393 +574,393 @@
 
 
         @media (min-width: 992px) {
-         
-       .header-inner,.submenu-grid  {
-        max-width: 960px;
-         margin: auto;
-      }
-    }
 
-    @media (min-width: 1200px) {
- .header-inner,.submenu-grid  {
-        max-width: 1140px;
-         margin: auto;
-      }
-    }
+            .header-inner,
+            .submenu-grid {
+                max-width: 960px;
+                margin: auto;
+            }
+        }
 
-  
+        @media (min-width: 1200px) {
 
-    @media (min-width: 1400px) {
-      .header-inner,.submenu-grid {
-        max-width: 1380px;
-        margin: auto;
-      }
-    }
-      .retail-pro{
-    margin-top:40px;
-  }
-  </style>
+            .header-inner,
+            .submenu-grid {
+                max-width: 1140px;
+                margin: auto;
+            }
+        }
+
+
+
+        @media (min-width: 1400px) {
+
+            .header-inner,
+            .submenu-grid {
+                max-width: 1380px;
+                margin: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <!-- Top Risk -->
-  <section class="risk">
-    <div class="container">
-      <p>Risk Warning: Trading CFDs and FX carries significant risk. OTC derivatives are leveraged products and can
-        result in losses which exceed deposits.</p>
 
-    </div>
 
-  </section>
-
-<div class="retail-pro">
-    <?php 
+    <div class="retail-pro">
+        <?php 
     get_template_part('template-parts/retail-professional');
     ?>
-</div>
-  <!-- Header -->
-  <header class="header" role="banner">
-    <div class="header-inner">
-      <div class="logo"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-horizontal.png" alt="Lunaro logo"style="border-radius: 0px"></a></div>
+    </div>
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-inner">
+            <div class="logo"><a href="<?php echo home_url(); ?>"><img
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-horizontal.png"
+                        alt="Lunaro logo" style="border-radius: 0px"></a></div>
 
-      <!-- Desktop Nav -->
-      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
-        <div class="nav-item">
-          <a href="about/">About</a>
-          <div class="submenu" aria-hidden="true">
-            <div class="submenu-grid">
-              <!-- <div >
+            <!-- Desktop Nav -->
+            <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+                <div class="nav-item">
+                    <a href="about/">About</a>
+                    <div class="submenu" aria-hidden="true">
+                        <div class="submenu-grid">
+                            <!-- <div >
                 <a href="about-us/">About us</a>
               </div> -->
-              <div>
-                <a href="faqs/">FAQs</a>
-              </div>
-              <div>
-                <a href="pricing-and-fees/">Pricing & fees</a>
-              </div>
-              <div>
-                <a href="contact-us/">Contact us</a>
-              </div>
+                            <div>
+                                <a href="faqs/">FAQs</a>
+                            </div>
+                            <div>
+                                <a href="pricing-and-fees/">Pricing & fees</a>
+                            </div>
+                            <div>
+                                <a href="contact-us/">Contact us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="trading/">Trading</a>
+                    <div class="submenu" aria-hidden="true">
+                        <div class="submenu-grid">
+
+                            <div>
+                                <a href="/spread-betting">Spread Betting</a>
+                            </div>
+                            <div>
+                                <a href="/cfd-trading">CFD Trading</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item">
+                    <a href="markets/">Markets</a>
+                    <div class="submenu" aria-hidden="true">
+                        <div class="submenu-grid">
+                            <div>
+                                <a href="indices/">Indices</a>
+                            </div>
+                            <div>
+                                <a href="forex/">Forex</a>
+                            </div>
+                            <div>
+                                <a href="commodities/">Commodities</a>
+                            </div>
+                            <div>
+                                <a href="shares/">Shares</a>
+                            </div>
+                            <div>
+                                <a href="etfs/">ETFs</a>
+                            </div>
+                            <div>
+                                <a href="treasuries/">Treasuries</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nav-item"><a href="/platforms">Platforms</a>
+
+                    <div class="submenu" aria-hidden="true">
+                        <div class="submenu-grid">
+                            <div>
+                                <a href="/meta-trader-5">Meta Trader 5</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="nav-item"><a href="#">Resources</a></div> -->
+            </nav>
+
+            <!-- Desktop actions -->
+            <div class="actions" aria-hidden="false">
+                <!-- Popup -->
+                <div id="popup" class="popup">
+                    <div class="popup-box">
+                        <span class="close" id="closePopup">&times;</span>
+                        <h2>Select Account Type</h2>
+                        <div class="popup-btns">
+                            <a href="/sign-up-individual"><button class="popup-btn">INDIVIDUAL</button></a>
+                            <a href="/sign-up-corporate"> <button class="popup-btn">CORPORATE</button></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://crm.lunaro.com"> <button class="btn">Log in</button></a>
+                <button
+                    class="signup px-4 py-2 bg-[#FFF4E4] text-black hover:bg-[#fff4e4ee] font-bold text-sm rounded-full transition">
+                    Sign up
+                </button>
+                <!-- Desktop navigation -->
+
             </div>
-          </div>
-        </div>
+            <form id="countryForm" method="post" style="display:none;">
+                <input type="hidden" name="country" id="countryInput">
+            </form>
 
-        <div class="nav-item">
-          <a href="trading/">Trading</a>
-          <div class="submenu" aria-hidden="true">
-            <div class="submenu-grid">
-
-              <div>
-                <a href="/spread-betting">Spread Betting</a>
-              </div>
-              <div>
-                <a href="/cfd-trading">CFD Trading</a>
-              </div>
-          </div>
-          </div>
-        </div>
-
-        <div class="nav-item">
-          <a href="markets/">Markets</a>
-          <div class="submenu" aria-hidden="true">
-            <div class="submenu-grid">
-              <div>
-                <a href="indices/">Indices</a>
-              </div>
-              <div>
-                <a href="forex/">Forex</a>
-              </div>
-              <div>
-                <a href="commodities/">Commodities</a>
-              </div>
-              <div>
-                <a href="shares/">Shares</a>
-              </div>
-              <div>
-                <a href="etfs/">ETFs</a>
-              </div>
-              <div>
-                <a href="treasuries/">Treasuries</a>
-              </div>
-
+            <!-- Mobile actions / hamburger -->
+            <div class="mobile-actions" aria-hidden="false">
+                <a href="https://crm.lunaro.com"> <button class="btn">Log in</button></a>
+                <button id="mobileToggle" class="btn" title="Open menu"><i class="fas fa-bars"></i></button>
             </div>
-          </div>
         </div>
 
-        <div class="nav-item"><a href="/platforms">Platforms</a>
+        </div>
+    </header>
 
-          <div class="submenu" aria-hidden="true">
-            <div class="submenu-grid">
-              <div>
-                <a href="/meta-trader-5">Meta Trader 5</a>
-              </div>
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <div class="drawer-top">
+            <div style="width:120px"><img
+                    src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-horizontal.png" alt="Logo">
             </div>
-          </div>
+            <button id="closeDrawer" aria-label="Close menu"
+                style="background:none;border:0;color:#fff;font-size:20px;cursor:pointer"><i
+                    class="fas fa-times"></i></button>
         </div>
 
-        <!-- <div class="nav-item"><a href="#">Resources</a></div> -->
-      </nav>
+        <nav class="mobile-nav" aria-label="Mobile navigation">
+            <div class="mobile-nav-item">
+                <div class="mobile-nav-header">
+                    <span><a href="about/">About</a></span><i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="mobile-submenu">
+                    <div style="padding:10px 0"><a href="faqs/">FAQs</a></div>
+                    <div style="padding:10px 0"><a href="pricing-and-fees/">Pricing & fees</a></div>
+                    <div style="padding:10px 0"><a href="contact-us/">Contact us</a></div>
+                </div>
+            </div>
 
-      <!-- Desktop actions -->
-      <div class="actions" aria-hidden="false">
-              <!-- Popup -->
-<div id="popup" class="popup">
-  <div class="popup-box">
-    <span class="close" id="closePopup">&times;</span>
-    <h2>Select Account Type</h2>
-    <div class="popup-btns">
-      <a href="/sign-up-individual"><button class="popup-btn">INDIVIDUAL</button></a>
-     <a href="/sign-up-corporate"> <button class="popup-btn">CORPORATE</button></a>
-    </div>
-  </div>
-</div>
-       <a href="https://crm.lunaro.com"> <button class="btn">Log in</button></a>
-       <button class="signup px-4 py-2 bg-[#FFF4E4] text-black hover:bg-[#fff4e4ee] font-bold text-sm rounded-full transition">
-  Sign up
-</button>
-        <!-- Desktop navigation -->
- 
-      </div>
-<form id="countryForm" method="post" style="display:none;">
-  <input type="hidden" name="country" id="countryInput">
-</form>
+            <div class="mobile-nav-item">
+                <div class="mobile-nav-header">
+                    <span><a href="trading/">Trading</a></span><i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="mobile-submenu">
+                    <div style="padding:10px 0"><a href="/cfd-trading">CFD Trading</a></div>
+                    <div style="padding:10px 0"><a href="/etd-trading">ETD Trading</a></div>
+                    <div style="padding:10px 0"><a href="/cme-futures/">CME Group Futures</a></div>
+                    <div style="padding:10px 0"><a href="/cme-options">CME Group Options</a></div>
+                </div>
+            </div>
 
-      <!-- Mobile actions / hamburger -->
-      <div class="mobile-actions" aria-hidden="false">
-        <a href="https://crm.lunaro.com"> <button class="btn">Log in</button></a>
-        <button id="mobileToggle" class="btn" title="Open menu"><i class="fas fa-bars"></i></button>
-      </div>
-      </div>
+            <div class="mobile-nav-item">
+                <div class="mobile-nav-header">
+                    <span><a href="markets/">Markets</a></span><i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="mobile-submenu">
+                    <div style="padding:10px 0"><a href="indices/">Indices</a></div>
+                    <div style="padding:10px 0"><a href="forex/">Forex</a></div>
+                    <div style="padding:10px 0"><a href="commodities/">Commodities</a></div>
+                    <div style="padding:10px 0"><a href="shares/">Shares</a></div>
+                    <div style="padding:10px 0"><a href="etfs/">ETFs</a></div>
+                    <div style="padding:10px 0"><a href="treasuries/">Treasuries</a></div>
+                </div>
+            </div>
 
-    </div>
-  </header>
+            <div class="mobile-nav-item">
+                <div class="mobile-nav-header">
+                    <span><a href="/platforms">Platforms</a></span><i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="mobile-submenu">
+                    <div style="padding:10px 0"><a href="/meta-trader-5">Meta Trader 5</a></div>
+                    <div style="padding:10px 0"><a href="/cqg">CQG</a></div>
+                    <div style="padding:10px 0"><a href="/trading-technologies">Trading Technologies</a></div>
+                    <div style="padding:10px 0"><a href="/rithmic">Rithmic</a></div>
+                </div>
+            </div>
 
-  <!-- Mobile Drawer -->
-  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
-    <div class="drawer-top">
-      <div style="width:120px"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-horizontal.png" alt="Logo"></div>
-      <button id="closeDrawer" aria-label="Close menu"
-        style="background:none;border:0;color:#fff;font-size:20px;cursor:pointer"><i class="fas fa-times"></i></button>
-    </div>
-
-    <nav class="mobile-nav" aria-label="Mobile navigation">
-      <div class="mobile-nav-item">
-        <div class="mobile-nav-header">
-          <span><a href="about/">About</a></span><i class="fas fa-chevron-down"></i>
-        </div>
-        <div class="mobile-submenu">
-          <div style="padding:10px 0"><a  href="faqs/">FAQs</a></div>
-          <div style="padding:10px 0"><a href="pricing-and-fees/">Pricing & fees</a></div>
-          <div style="padding:10px 0"><a href="contact-us/">Contact us</a></div>
-        </div>
-      </div>
-
-      <div class="mobile-nav-item">
-        <div class="mobile-nav-header">
-          <span><a href="trading/">Trading</a></span><i class="fas fa-chevron-down"></i>
-        </div>
-        <div class="mobile-submenu">
-          <div style="padding:10px 0"><a href="/cfd-trading">CFD Trading</a></div>
-          <div style="padding:10px 0"><a href="/etd-trading">ETD Trading</a></div>
-          <div style="padding:10px 0"><a href="/cme-futures/">CME Group Futures</a></div>
-          <div style="padding:10px 0"><a href="/cme-options">CME Group Options</a></div>
-        </div>
-      </div>
-
-      <div class="mobile-nav-item">
-        <div class="mobile-nav-header">
-          <span><a href="markets/">Markets</a></span><i class="fas fa-chevron-down"></i>
-        </div>
-        <div class="mobile-submenu">
-          <div style="padding:10px 0"><a href="indices/">Indices</a></div>
-          <div style="padding:10px 0"><a href="forex/">Forex</a></div>
-          <div style="padding:10px 0"><a href="commodities/">Commodities</a></div>
-          <div style="padding:10px 0"><a href="shares/">Shares</a></div>
-          <div style="padding:10px 0"><a href="etfs/">ETFs</a></div>
-          <div style="padding:10px 0"><a href="treasuries/">Treasuries</a></div>
-        </div>
-      </div>
-
-      <div class="mobile-nav-item">
-        <div class="mobile-nav-header">
-          <span><a href="/platforms">Platforms</a></span><i class="fas fa-chevron-down"></i>
-        </div>
-        <div class="mobile-submenu">
-          <div style="padding:10px 0"><a href="/meta-trader-5">Meta Trader 5</a></div>
-          <div style="padding:10px 0"><a href="/cqg">CQG</a></div>
-          <div style="padding:10px 0"><a href="/trading-technologies">Trading Technologies</a></div>
-          <div style="padding:10px 0"><a href="/rithmic">Rithmic</a></div>
-        </div>
-      </div>
-
-      <!-- <div class="mobile-nav-item">
+            <!-- <div class="mobile-nav-item">
         <div class="mobile-nav-header">Resources</div>
       </div>
 
       <div class="mobile-nav-item">
         <div class="mobile-nav-header">Retail & Professional</div>
       </div> -->
-    </nav>
-  </div>
+        </nav>
+    </div>
 
-  <div class="overlay" id="overlay"></div>
-
-
+    <div class="overlay" id="overlay"></div>
 
 
 
 
 
 
-  <!-- SCRIPTS -->
-  <script>
-    // Drawer & overlay
-    const mobileToggle = document.getElementById('mobileToggle');
-    const closeDrawer = document.getElementById('closeDrawer');
-    const mobileDrawer = document.getElementById('mobileDrawer');
-    const overlay = document.getElementById('overlay');
 
-    mobileToggle && mobileToggle.addEventListener('click', () => {
-      mobileDrawer.classList.add('active');
-      overlay.classList.add('active');
-      mobileDrawer.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
-    });
 
-    closeDrawer && closeDrawer.addEventListener('click', () => {
-      mobileDrawer.classList.remove('active');
-      overlay.classList.remove('active');
-      mobileDrawer.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-    });
+    <!-- SCRIPTS -->
+    <script>
+        // Drawer & overlay
+        const mobileToggle = document.getElementById('mobileToggle');
+        const closeDrawer = document.getElementById('closeDrawer');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        const overlay = document.getElementById('overlay');
 
-    overlay && overlay.addEventListener('click', () => {
-      mobileDrawer.classList.remove('active');
-      overlay.classList.remove('active');
-      mobileDrawer.setAttribute('aria-hidden', 'true');
-      document.body.style.overflow = '';
-    });
+        mobileToggle && mobileToggle.addEventListener('click', () => {
+            mobileDrawer.classList.add('active');
+            overlay.classList.add('active');
+            mobileDrawer.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        });
 
-    // Mobile submenu toggles
-    document.querySelectorAll('.mobile-nav-header').forEach(header => {
-      header.addEventListener('click', () => {
-        const submenu = header.nextElementSibling;
-        const icon = header.querySelector('i');
-        if (!submenu) return;
-        submenu.classList.toggle('active');
-        icon && icon.classList.toggle('rotate-180');
-      });
-    });
+        closeDrawer && closeDrawer.addEventListener('click', () => {
+            mobileDrawer.classList.remove('active');
+            overlay.classList.remove('active');
+            mobileDrawer.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        });
 
-    // Desktop hover reset on scroll (like your original)
-    const navItems = document.querySelectorAll('.nav-item');
-    window.addEventListener('scroll', () => {
-      navItems.forEach(item => {
-        const submenu = item.querySelector('.submenu');
-        if (submenu) {
-          submenu.style.opacity = '0';
-          submenu.style.visibility = 'hidden';
-          submenu.style.transform = 'translateY(-12px)';
+        overlay && overlay.addEventListener('click', () => {
+            mobileDrawer.classList.remove('active');
+            overlay.classList.remove('active');
+            mobileDrawer.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        });
+
+        // Mobile submenu toggles
+        document.querySelectorAll('.mobile-nav-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const submenu = header.nextElementSibling;
+                const icon = header.querySelector('i');
+                if (!submenu) return;
+                submenu.classList.toggle('active');
+                icon && icon.classList.toggle('rotate-180');
+            });
+        });
+
+        // Desktop hover reset on scroll (like your original)
+        const navItems = document.querySelectorAll('.nav-item');
+        window.addEventListener('scroll', () => {
+            navItems.forEach(item => {
+                const submenu = item.querySelector('.submenu');
+                if (submenu) {
+                    submenu.style.opacity = '0';
+                    submenu.style.visibility = 'hidden';
+                    submenu.style.transform = 'translateY(-12px)';
+                }
+            });
+        });
+
+        // restore submenu on mouseenter/leave
+        navItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                const submenu = item.querySelector('.submenu');
+                if (submenu) {
+                    submenu.style.opacity = '1';
+                    submenu.style.visibility = 'visible';
+                    submenu.style.transform = 'translateY(0)';
+                }
+            });
+            item.addEventListener('mouseleave', () => {
+                const submenu = item.querySelector('.submenu');
+                if (submenu) {
+                    submenu.style.opacity = '0';
+                    submenu.style.visibility = 'hidden';
+                    submenu.style.transform = 'translateY(-12px)';
+                }
+            });
+        }); 
+    </script>
+
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.querySelector(".dropdown");
+            const arrow = document.getElementById("arrowIcon");
+
+            dropdown.classList.toggle("show");
+            arrow.textContent = dropdown.classList.contains("show") ? "▲" : "▼";
         }
-      });
-    });
 
-    // restore submenu on mouseenter/leave
-    navItems.forEach(item => {
-      item.addEventListener('mouseenter', () => {
-        const submenu = item.querySelector('.submenu');
-        if (submenu) {
-          submenu.style.opacity = '1';
-          submenu.style.visibility = 'visible';
-          submenu.style.transform = 'translateY(0)';
+        function selectCountry(country, flagUrl) {
+            const flag = document.getElementById("countryFlag");
+            const name = document.getElementById("countryName");
+            const arrow = document.getElementById("arrowIcon");
+            const dropdown = document.querySelector(".dropdown");
+
+            // Update UI
+            flag.src = flagUrl;
+            name.textContent = country;
+            dropdown.classList.remove("show");
+            arrow.textContent = "▼";
+
+            // 🔹 Submit hidden form to PHP to save in session
+            document.getElementById("countryInput").value = country.toLowerCase(); // 'uae' or 'uk'
+            document.getElementById("countryForm").submit();
         }
-      });
-      item.addEventListener('mouseleave', () => {
-        const submenu = item.querySelector('.submenu');
-        if (submenu) {
-          submenu.style.opacity = '0';
-          submenu.style.visibility = 'hidden';
-          submenu.style.transform = 'translateY(-12px)';
-        }
-      });
-    }); 
-  </script>
 
-<script>
-  function toggleDropdown() {
-    const dropdown = document.querySelector(".dropdown");
-    const arrow = document.getElementById("arrowIcon");
+        // Close dropdown when clicking outside
+        window.addEventListener("click", function (e) {
+            const dropdown = document.querySelector(".dropdown");
+            const arrow = document.getElementById("arrowIcon");
 
-    dropdown.classList.toggle("show");
-    arrow.textContent = dropdown.classList.contains("show") ? "▲" : "▼";
-  }
-
-  function selectCountry(country, flagUrl) {
-    const flag = document.getElementById("countryFlag");
-    const name = document.getElementById("countryName");
-    const arrow = document.getElementById("arrowIcon");
-    const dropdown = document.querySelector(".dropdown");
-
-    // Update UI
-    flag.src = flagUrl;
-    name.textContent = country;
-    dropdown.classList.remove("show");
-    arrow.textContent = "▼";
-
-    // 🔹 Submit hidden form to PHP to save in session
-    document.getElementById("countryInput").value = country.toLowerCase(); // 'uae' or 'uk'
-    document.getElementById("countryForm").submit();
-  }
-
-  // Close dropdown when clicking outside
-  window.addEventListener("click", function (e) {
-    const dropdown = document.querySelector(".dropdown");
-    const arrow = document.getElementById("arrowIcon");
-
-    if (!e.target.closest(".dropdown")) {
-      dropdown.classList.remove("show");
-      arrow.textContent = "▼";
-    }
-  });
-</script>
+            if (!e.target.closest(".dropdown")) {
+                dropdown.classList.remove("show");
+                arrow.textContent = "▼";
+            }
+        });
+    </script>
 
 
-<!-- for signup button -->
-<script>
-// Get elements
-document.addEventListener('DOMContentLoaded', () => {
+    <!-- for signup button -->
+    <script>
+        // Get elements
+        document.addEventListener('DOMContentLoaded', () => {
 
-const buttons = document.querySelectorAll('.signup');
-const closePopup = document.getElementById("closePopup");
-const popup = document.getElementById("popup");
-buttons.forEach(button => {
-  button.addEventListener('click', () => {
-    console.log('Button clicked:', button.textContent);
-    popup.classList.add("active");
+            const buttons = document.querySelectorAll('.signup');
+            const closePopup = document.getElementById("closePopup");
+            const popup = document.getElementById("popup");
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    console.log('Button clicked:', button.textContent);
+                    popup.classList.add("active");
 
-  });
-});
-// Close popup on close button or background click
-closePopup.addEventListener("click", () => {
-  popup.classList.remove("active");
-});
+                });
+            });
+            // Close popup on close button or background click
+            closePopup.addEventListener("click", () => {
+                popup.classList.remove("active");
+            });
 
-// Optional: close when clicking outside popup box
-popup.addEventListener("click", (e) => {
-  if (e.target === popup) {
-    popup.classList.remove("active");
-  }
-});
-  });
+            // Optional: close when clicking outside popup box
+            popup.addEventListener("click", (e) => {
+                if (e.target === popup) {
+                    popup.classList.remove("active");
+                }
+            });
+        });
 
-</script>
+    </script>
 
-<script>
-            document.addEventListener("DOMContentLoaded", () => {
-                const currentPath = window.location.pathname;
-                const navLinks = document.querySelectorAll(".main-nav a");
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const currentPath = window.location.pathname;
+            const navLinks = document.querySelectorAll(".main-nav a");
 
-                navLinks.forEach(link => {
+            navLinks.forEach(link => {
                 const linkHref = link.getAttribute("href");
 
                 // Normalize trailing slashes for comparison
@@ -962,10 +971,10 @@ popup.addEventListener("click", (e) => {
                 if (normalizedPath.includes(normalizedLink) && normalizedLink !== "") {
                     link.classList.add("active");
                 }
-                });
             });
-</script>
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

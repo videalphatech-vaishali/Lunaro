@@ -46,10 +46,25 @@
 <body>
   <div class="forex-hero-section-body">
   <h2>Trade Forex</h2>
+    <?php 
+    // get the country from session or default to 'uk'
+    $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+    if ($country === 'uae') { 
+  ?>
         <h4>
           The world's largest financial market offers unparalleled liquidity and 24/5 trading opportunities.
            Trade dozens of FX currency pairs including majors, minors, and exotics with spreads from 0.3 pips.
         </h4>
+  <?php 
+    } else { 
+  ?>
+          <h4>
+          The world's largest financial market offers unparalleled liquidity and 24/5 trading opportunities.
+           Trade dozens of FX currency pairs including majors, minors, and exotics with spreads from 0.7 pips.
+        </h4>
+        <?php 
+    }?>
+
        
 </div>
 </body>

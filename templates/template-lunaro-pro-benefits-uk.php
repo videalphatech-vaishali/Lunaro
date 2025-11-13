@@ -1041,10 +1041,8 @@
                 </div>
                 <h3>Cash Rebate Programs</h3>
                 <p>
-                    Designed for active traders seeking greater efficiency, our rebate structure returns a meaningful
-                    portion of trading costs each month directly linked to your notional volume in forex and indices.
-                    With transparent tiers starting from USD 25 million monthly volume, the programme reflects our focus
-                    on rewarding professional activity through cost-effective trading.
+                    Earn monthly cash rebates based on trading volumne across forex and indices markets, with tiers starting from $5M monthly notional volumne, 
+                    subject to conditions.
                 </p>
             </div>
 
@@ -1055,10 +1053,7 @@
                 </div>
                 <h3>VIP Events & Hospitality</h3>
                 <p>
-                    Unlock exclusive VIP access to a world of global lifestyle, networking, and entertainment events.
-                    Become a part of an elite community by joining private trading seminars and engaging market insights
-                    sessions. Immerse yourself in unique opportunities to connect and grow your network while enhancing
-                    your trading skills.
+                    Receive invitations to exclusive trading seminars, market outlook events, and networking opportunities with fellow professional traders.
                 </p>
             </div>
 
@@ -1129,7 +1124,7 @@
                 <p class="desc">For teams to grow with clarity, consistency, and cost efficiency.</p>
                 <button>Get Started</button>
                 <ul class="features">
-                    <li>Maximum Leverage: 1 (FCA Retail Limit)</li>
+                    <li>Maximum Leverage: 30:1 (FCA Retail Limit)</li>
                     <li>Minimum Spread: From 0.34 pips</li>
                     <li>Rebate: No rebate</li>
                     <li>Margin Requirements: 3.33% minimum</li>
@@ -1146,10 +1141,10 @@
                 <p class="desc">For teams aiming with performance, precision, and strategy.</p>
                 <button class="professional-btn">Create Professional Account</button>
                 <ul class="features lunaro-features">
-                    <li>Maximum Leverage: Up to 2</li>
+                    <li>Maximum Leverage: Up to 250:1</li>
                     <li>Minimum Spread: From 0.34 pips</li>
                     <li>Rebate: Up to 33.3%</li>
-                    <li>Margin Requirements: From 3%</li>
+                    <li>Margin Requirements: From 0.4%</li>
                     <li>Account Manager: Dedicated relationship manager</li>
                     <li>Advanced Tools: Professional trading suite</li>
                     <li>Market Access: Additional professional products</li>

@@ -89,67 +89,75 @@
 <body>
     <div class="our-pricing-advantages-section">
         <div class="left-side">
-            <h2>Key Benefits</h2>
+            <h2>Key Benefits of Forex Trading</h2>
             <div class="advantage-item">
                 <i class="fa-solid fa-check-circle"></i>
                 <div class="column-right-text">
-                    <span>Exposure to multiple companies with one trade.</span>
-                    <p>'
-                        Instead of picking individual stocks, an index position gives you
-                        instant exposure to an entire market or sector, diversifying risk
-                        across dozens or hundreads of companies.
+                    <span>$7.5 Trillion Daily Trading Volume</span>
+                    <p>
+                        The Forex market's massive liquidity ensures you can enter and exit positions efficiently, even
+                        with large orders, without significantly impacting price.
                     </p>
                 </div>
             </div>
             <div class="advantage-item">
                 <i class="fa-solid fa-check-circle"></i>
                 <div class="column-right-text">
-                    <span>Less volatile than individual shares.</span>
-                    <p>Index movements tend to be smoother than individual stock prices,
-                        as gains and losses across constituent companies offset each other,
-                        reducing short-term price swings.
+                    <span>24-Hour Market Access, 5 Days a Week</span>
+                    <p>Trade around the clock from Sunday evening to Friday night (GMT), giving you flexibility to
+                        respond to global events and fit trading around your schedule.
                     </p>
                 </div>
             </div>
             <div class="advantage-item">
                 <i class="fa-solid fa-check-circle"></i>
                 <div class="column-right-text">
-                    <span>Reflects economic and sector performance.</span>
-                    <p>Indices respond to macroeconomic trends, central bank decisions, earning
-                        seasons, and geopolitical events, making them ideal for traders who
-                        analyze broader market conditions.
-
+                    <span>High Liquidity and Tight Spreads</span>
+                    <p>Major currency pairs like EUR/USD and GBP/USD offer some of the tightest spreads in financial
+                        markets, starting from just 0.3 pips, keeping your trading costs low
                     </p>
                 </div>
             </div>
             <div class="advantage-item">
                 <i class="fa-solid fa-check-circle"></i>
                 <div class="column-right-text">
-                    <span>Available 24 hours on major indices.</span>
-                    <p>Trade key benchmarks around the clock, including out-of-hours sessions, allowing you to react
-                        to global news and manage positions across time zones.
-
+                    <span>Responsive to Economic Data and Events</span>
+                    <p>Forex reacts instantly to central bank decisions, employment reports, inflation data, and
+                        geopolitical developments, providing numerous trading opportunities for informed traders.
                     </p>
                 </div>
             </div>
         </div>
         <div class="right-side">
-            <h2>Key risks of trading indices:</h2>
+            <h2>Key Risks of Forex Trading</h2>
             <div class="advantage-item">
                 <i class="fa-solid fa-check-circle"></i>
                 <div class="column-right-text">
-                    <span>Market Wide Downturns can Affect Entire Index Value</span>
-                    <p>Since indices represent broad markets, a general downturn impacts the entire basket. You can't
-                        isolate youreself from sector-wide or economic risks.
+                    <span>Currency Volatility Can Lead to Rapid Losses</span>
+                      <?php 
+                   // get the country from session or default to 'uk'
+                   $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+                   if ($country === 'uae') { 
+                 ?>
+                    <p>Exchange rates can move sharply in response to unexpected news or data releases, potentially
+                        resulting in significant losses if positions aren't managed carefully.
                     </p>
+                 <?php 
+                   } else { 
+                 ?>
+                      <p>Exchange rates can move sharply in response to unexpected news or data releases, potentially resulting in significant losses.</p>
+                 <?php 
+                   }
+                 ?>
                 </div>
             </div>
             <div class="advantage-item">
                 <i class="fa-solid fa-check-circle"></i>
                 <div class="column-right-text">
-                    <span>Less Control Over Individual Company Performance</span>
-                    <p>Strong performance by a single company may be iluted across the broader index.
-                        You're exposed to the collective movement, not individual stock stories.
+                    <span>Economic and Political Events Create Unpredictable Movements</span>
+                    <p>Elections, policy changes, trade tensions, and central bank surprises can trigger sudden price
+                        swings that challenge even experienced traders.
+
                     </p>
                 </div>
             </div>
@@ -157,9 +165,17 @@
                 <i class="fa-solid fa-check-circle"></i>
                 <div class="column-right-text">
                     <span>Leverage Can Amplify Both Gains and Losses</span>
-                    <p>Trading indices with leverage magnifies yur exposure. While this increases profit potential, it
-                        also heightens risk
-                        if the market moves against your position.
+                    <p>While leverage allows you to control larger positions with less capital, it also magnifies losses
+                        if the market moves against you. Always use appropriate risk management.
+                    </p>
+                </div>
+            </div>
+            <div class="advantage-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <div class="column-right-text">
+                    <span>24-Hour Trading Requires Diligent Monitoring</span>
+                    <p>The Forex market never sleeps. Significant moves can happen overnight or during off-peak hours,
+                        making risk management tools like stop-loss orders essential.
                     </p>
                 </div>
             </div>

@@ -31,12 +31,14 @@
         color: #fff4e4;
         min-width: 250px;
     }
-        .left-side P { 
-          font-family: 'Calibri', sans-serif;
-            margin-bottom: 10px;
-            font-weight: 400;
-            color: white;
-        }
+
+    .left-side P {
+        font-family: 'Calibri', sans-serif;
+        margin-bottom: 10px;
+        font-weight: 400;
+        color: white;
+    }
+
     /* Right side (box list) */
     .right-side {
         flex: 1.5;
@@ -95,7 +97,7 @@
     .pop-com-answer {
         opacity: 0;
         max-height: 0;
-        overflow: hidden;
+        overflow: scroll;
         font-size: 0.95rem;
         line-height: 1.5;
         color: rgba(255, 244, 228, 0.8);
@@ -108,15 +110,72 @@
         opacity: 1;
     }
 
+    ::-webkit-scrollbar {
+        display: none;
+    }
 
 
 
     /* Responsive layout */
-    @media (max-width: 900px) {
+
+
+
+
+    @media (max-width: 575.98px) {
         .pi-container {
-            flex-direction: column;
-            gap: 40px;
-            padding: 40px 20px;
+            width: 100%;
+        }
+
+        .pi-title {
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .pi-container {
+            width: 540px;
+        }
+
+        .pi-title {
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .pi-container {
+            width: 720px;
+        }
+
+        .pi-title {
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .pi-container {
+            width: 960px;
+        }
+
+        .pi-title {
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .pi-container {
+            width: 1140px;
+        }
+
+        .pi-title {
+            text-align: center;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        .pi-container {
+            width: 1320px;
+			margin:auto
+				
         }
 
         .pi-title {
@@ -135,31 +194,96 @@
             <div class="left-side">
                 <h2 class="pi-title">Popular ETFs to Trade</h2>
                 <p>
-                   Access leading ETFs covering major markets, sectors, and investment themes
+                    Access leading ETFs covering major markets, sectors, and investment themes
                 </p>
             </div>
 
             <div class="right-side">
+            <?php 
+              // get the country from session or default to 'uk'
+              $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+              if ($country === 'uae') { 
+            ?>
                 <div class="pop-com-item">
                     <div class="pop-com-question">Broad Market ETFs</div>
                     <div class="pop-com-answer">
-                        We offer branding, digital marketing, performance campaigns, and content
-                        strategy tailored to your business goals.
+                        <span><b>S&P 500 ETFs (e.g., SPY, VOO, IVV)</b></span>
+                        <p>Track the 500 largest US companies, providing diversified exposure to American large-cap
+                            equities across all sectors.</p>
+                        <span><b>Nasdaq 100 ETFs (e.g., QQQ)</b></span>
+                        <p> Concentrated exposure to US technology and growth-oriented companies, including Apple,
+                            Microsoft, Amazon, and other innovation leaders.</p>
+                        <span><b>FTSE 100 ETFs</b></span>
+                        <p>
+                            Capture performance of the 100 largest UK-listed companies, offering exposure to British
+                            blue-chips and international earnings.
+                        </p>
+
                     </div>
                 </div>
+             <?php 
+               } else { 
+             ?>
+                  <div class="pop-com-item">
+                    <div class="pop-com-question">Broad Market ETFs</div>
+                    <div class="pop-com-answer">
+                        <span><b>US SPX 500 ETFs (e.g., SPY, VOO, IVV)</b></span>
+                        <p>Track the 500 largest US companies, providing diversified exposure to American large-cap equities across all sectors.</p>
+                        <span><b>US NDAQ 100 ETFs (e.g., QQQ)</b></span>
+                        <p>Concentrated exposure to US technology and growth-oriented companies, including Apple, Microsoft, Amazon, and other innovation leaders.</p>
+                        <span><b>UK 100 ETFs</b></span>
+                        <p>
+                            Capture performance of the 100 largest UK-listed companies, offering exposure to British blue-chips and international earnings.
+                        </p>
+
+                    </div>
+                </div>
+            <?php 
+               } 
+             ?>
+
 
                 <div class="pop-com-item">
                     <div class="pop-com-question">Sector-Specific ETFs</div>
                     <div class="pop-com-answer">
-                        We offer branding, digital marketing, performance campaigns, and content
-                        strategy tailored to your business goals.
+                        <span><b>Sector ETFs</b></span>
+                        <p>Focused exposure to software, semiconductors, internet services, and hardware companies
+                            driving
+                            digital transformation.</p>
+                        <span><b> Healthcare ETFs</b></span>
+                        <p>Access pharmaceutical companies, biotechnology firms, medical device manufacturers, and
+                            healthcare services providers.</p>
+                        <span><b> Financial Sector ETFs</b></span>
+                        <p>
+                            Exposure to banks, insurance companies, asset managers, and payment processors responding to
+                            interest rate and regulatory environments.
+                        </p>
+                        <span><b>
+                                Energy ETFs
+                            </b></span>
+                        <p>
+                            Track oil and gas producers, renewable energy companies, and energy infrastructure firms
+                            sensitive to commodity prices.
+                        </p>
                     </div>
                 </div>
                 <div class="pop-com-item">
                     <div class="pop-com-question">Thematic and Regional ETFs</div>
                     <div class="pop-com-answer">
-                        We offer branding, digital marketing, performance campaigns, and content
-                        strategy tailored to your business goals.
+                        <span><b>Clean Energy ETFs</b></span>
+                        <p>Invest in solar, wind, battery technology, and electric vehicle companies benefiting from
+                            energy transition trends.</p>
+                        <span><b>Emerging Markets ETFs</b></span>
+                        <p>Diversified exposure to developing economies in Asia, Latin America, and other high-growth
+                            regions.</p>
+
+                        <span><b>Dividend ETFs</b></span>
+                        <p>Focus on income-generating stocks with consistent dividend payment histories.</p>
+                        <span><b>Gold & Precious Metals ETFs</b></span>
+                        <p>
+                            Track physical gold prices or mining companies, offering safe-haven exposure without storage
+                            requirements.
+                        </p>
                     </div>
                 </div>
 

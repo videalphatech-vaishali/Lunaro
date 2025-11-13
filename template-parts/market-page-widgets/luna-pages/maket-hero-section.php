@@ -83,7 +83,7 @@
                 <h2>Explore Global Financial Markets</h2>
                 <p>Access a comprehensive range of financial markets with Lunaro Markets. From major forex
                     pairs and global indices to commodities and government bonds, our platform provides the
-                    tools and expertise you need to trade diverse asset classes on CFDs/SB with confidence.
+                    tools and expertise you need to trade diverse asset classes via derivatives with confidence.
 
                 </p>
             </div>
