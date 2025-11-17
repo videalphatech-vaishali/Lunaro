@@ -238,7 +238,7 @@
             background: var(--glass);
             backdrop-filter: blur(10px);
             transition: right .4s ease;
-            z-index: 120;
+            z-index: 999999;
             overflow-y: auto;
             box-shadow: -5px 0 20px rgba(0, 0, 0, 0.4);
             color: #fff;
@@ -892,43 +892,6 @@
         }); 
     </script>
 
-    <script>
-        function toggleDropdown() {
-            const dropdown = document.querySelector(".dropdown");
-            const arrow = document.getElementById("arrowIcon");
-
-            dropdown.classList.toggle("show");
-            arrow.textContent = dropdown.classList.contains("show") ? "▲" : "▼";
-        }
-
-        function selectCountry(country, flagUrl) {
-            const flag = document.getElementById("countryFlag");
-            const name = document.getElementById("countryName");
-            const arrow = document.getElementById("arrowIcon");
-            const dropdown = document.querySelector(".dropdown");
-
-            // Update UI
-            flag.src = flagUrl;
-            name.textContent = country;
-            dropdown.classList.remove("show");
-            arrow.textContent = "▼";
-
-            // 🔹 Submit hidden form to PHP to save in session
-            document.getElementById("countryInput").value = country.toLowerCase(); // 'uae' or 'uk'
-            document.getElementById("countryForm").submit();
-        }
-
-        // Close dropdown when clicking outside
-        window.addEventListener("click", function (e) {
-            const dropdown = document.querySelector(".dropdown");
-            const arrow = document.getElementById("arrowIcon");
-
-            if (!e.target.closest(".dropdown")) {
-                dropdown.classList.remove("show");
-                arrow.textContent = "▼";
-            }
-        });
-    </script>
 
 
     <!-- for signup button -->

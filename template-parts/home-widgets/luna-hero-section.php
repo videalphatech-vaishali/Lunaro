@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lunaro </title>
+  <title>Platforms | Lunaro Markets</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -354,24 +354,24 @@
     <div class="carousel-container" id="marketTrack">
       <button class="carousel-btn prev">&#10094;</button>
       <div class="carousel-track">
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/EURUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">EURUSD</span><span class="ltp">353.54</span></div><div class="change">+0.15%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/USDJPY.png"><div class="text"><div class="symbol-div"><span class="symbol">USDJPY</span><span class="ltp">147.22</span></div><div class="change">+0.20%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/GBPUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">GBPUSD</span><span class="ltp">353.54</span></div><div class="change">-0.10%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/USDCAD.png"><div class="text"><div class="symbol-div"><span class="symbol">USDCAD</span><span class="ltp">146.28</span></div><div class="change">+0.05%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/NZDUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">NZDUSD</span><span class="ltp">353.54</span></div><div class="change">+0.12%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/AUDUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">AUDUSD</span><span class="ltp">145.87</span></div><div class="change">+0.18%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/EURUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">EURUSD</span><span class="ltp">353.54</span></div><div class="change">+0.15%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/USDJPY.png"><div class="text"><div class="symbol-div"><span class="symbol">USDJPY</span><span class="ltp">147.22</span></div><div class="change">+0.20%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/GBPUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">GBPUSD</span><span class="ltp">353.54</span></div><div class="change">-0.10%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/USDCAD.png"><div class="text"><div class="symbol-div"><span class="symbol">USDCAD</span><span class="ltp">146.28</span></div><div class="change">+0.05%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/NZDUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">NZDUSD</span><span class="ltp">353.54</span></div><div class="change">+0.12%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/AUDUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">AUDUSD</span><span class="ltp">145.87</span></div><div class="change">+0.18%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/EURUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">EURUSD</span><span class="ltp">353.54</span></div><div class="change">+0.15%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/USDJPY.png"><div class="text"><div class="symbol-div"><span class="symbol">USDJPY</span><span class="ltp">147.22</span></div><div class="change">+0.20%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/GBPUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">GBPUSD</span><span class="ltp">353.54</span></div><div class="change">-0.10%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/USDCAD.png"><div class="text"><div class="symbol-div"><span class="symbol">USDCAD</span><span class="ltp">146.28</span></div><div class="change">+0.05%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/NZDUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">NZDUSD</span><span class="ltp">353.54</span></div><div class="change">+0.12%</div></div></div>
-        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/AUDUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">AUDUSD</span><span class="ltp">145.87</span></div><div class="change">+0.18%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/EURUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">EURUSD</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/USDJPY.png"><div class="text"><div class="symbol-div"><span class="symbol">USDJPY</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/GBPUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">GBPUSD</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/USDCAD.png"><div class="text"><div class="symbol-div"><span class="symbol">USDCAD</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/NZDUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">NZDUSD</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/AUDUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">AUDUSD</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/EURUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">EURUSD</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/USDJPY.png"><div class="text"><div class="symbol-div"><span class="symbol">USDJPY</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/GBPUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">GBPUSD</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/USDCAD.png"><div class="text"><div class="symbol-div"><span class="symbol">USDCAD</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/NZDUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">NZDUSD</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/AUDUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">AUDUSD</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/EURUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">EURUSD</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/USDJPY.png"><div class="text"><div class="symbol-div"><span class="symbol">USDJPY</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/GBPUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">GBPUSD</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/USDCAD.png"><div class="text"><div class="symbol-div"><span class="symbol">USDCAD</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/NZDUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">NZDUSD</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
+        <div class="carousel-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/AUDUSD.png"><div class="text"><div class="symbol-div"><span class="symbol">AUDUSD</span><span class="ltp">0.00</span></div><div class="change">+0.00%</div></div></div>
       </div>
       <button class="carousel-btn next">&#10095;</button>
     </div>
@@ -445,41 +445,91 @@
 </script>
 
 <script>
-     const heroConnection = new signalR.HubConnectionBuilder()
+  const heroConnection = new signalR.HubConnectionBuilder()
     .withUrl("https://lunaromarket.vedakronos.com/dataHub")
     .withAutomaticReconnect()
     .build();
 
+  let lastUpdateTime = Date.now();
+  const FALLBACK_TIMEOUT = 5000; // 10 seconds
+  const FALLBACK_API = "https://lunaromarket.vedakronos.com/api/data/live";
+
+
   heroConnection.on("ReceiveMessage", (symbol, data) => {
-   
-    
+    lastUpdateTime = Date.now(); // update heartbeat
+
     try {
       const price = typeof data === "string" ? JSON.parse(data) : data;
       document.querySelectorAll(".symbol").forEach(symbolEl => {
         if (symbolEl.textContent.trim().toUpperCase() === symbol.toUpperCase()) {
           const symbolDiv = symbolEl.closest(".symbol-div");
           const ltpEl = symbolDiv.querySelector(".ltp");
-          const textParent = symbolDiv.closest(".text");
-          const changeEl = textParent.querySelector(".change");
+          const changeEl = symbolDiv.closest(".text").querySelector(".change");
 
-          if (ltpEl && price.lastPrice !== undefined) {
+          if (ltpEl && price.lastPrice !== undefined)
             ltpEl.textContent = parseFloat(price.lastPrice).toFixed(5);
-          }
+
           if (changeEl && price.changePercent !== undefined) {
             const change = parseFloat(price.changePercent);
             changeEl.textContent = `${change.toFixed(2)}%`;
-            changeEl.className = `change ${change >= 0 ? "text-green-400" : "text-red-400"}`;
+            changeEl.style.color = change >= 0 ? "#00ff6a" : "#ff4d4d";
           }
         }
       });
     } catch (err) {
-      console.error("❌ Error updating symbol:", err);
+      console.error(" Error updating symbol:", err);
     }
   });
 
+
   heroConnection.start()
-    .then(() => console.log("✅ Connected to SignalR"))
-    .catch(err => console.error("❌ Connection failed:", err));
+    .then(() => console.log(" Connected to SignalR"))
+    .catch(err => console.error(" Connection failed:", err));
+
+
+  async function checkSignalRHealth() {
+    const now = Date.now();
+    if (now - lastUpdateTime > FALLBACK_TIMEOUT) {
+      console.warn(" SignalR inactive — fetching data from API...");
+      await fetchFromAPI();
+      lastUpdateTime = Date.now(); // reset timer after API refresh
+    }
+  }
+
+  async function fetchFromAPI() {
+    try {
+      const res = await fetch(FALLBACK_API);
+      if (!res.ok) throw new Error("API fetch failed");
+      const apiData = await res.json();
+      updateFromAPI(apiData);
+    } catch (err) {
+      console.error(" API Fallback Error:", err);
+    }
+  }
+
+ function updateFromAPI(data) {
+  data.forEach(item => {
+    document.querySelectorAll(".symbol").forEach(symbolEl => {
+      if (symbolEl.textContent.trim().toUpperCase() === item.Symbol.toUpperCase()) {
+        const symbolDiv = symbolEl.closest(".symbol-div");
+        const ltpEl = symbolDiv.querySelector(".ltp");
+        const changeEl = symbolDiv.closest(".text").querySelector(".change");
+
+        if (ltpEl) ltpEl.textContent = parseFloat(item.LTP).toFixed(5);
+        if (changeEl) {
+          const change = parseFloat(item.ChangePercent);
+          changeEl.textContent = `${change.toFixed(4)}%`;
+          changeEl.style.color = change >= 0 ? "#00ff6a" : "#ff4d4d";
+        }
+      }
+    });
+  });
+}
+
+
+
+  setInterval(checkSignalRHealth, 10000);
 </script>
+
 </body>
 </html>

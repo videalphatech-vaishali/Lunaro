@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+ 
 
 <head>
     <meta charset="UTF-8" />
@@ -641,9 +642,11 @@
                 <!-- Desktop navigation -->
 
             </div>
-            <form id="countryForm" method="post" style="display:none;">
-                <input type="hidden" name="country" id="countryInput">
-            </form>
+      <form id="countryForm" method="post" style="display:none;">
+    <input type="hidden" name="country" id="countryInput">
+    <input type="hidden" name="redirect_to" id="redirectTo">
+</form>
+
 
             <!-- Mobile actions / hamburger -->
             <div class="mobile-actions" aria-hidden="false">
@@ -809,41 +812,45 @@
     </script>
 
     <script>
-        function toggleDropdown() {
-            const dropdown = document.querySelector(".dropdown");
-            const arrow = document.getElementById("arrowIcon");
 
-            dropdown.classList.toggle("show");
-            arrow.textContent = dropdown.classList.contains("show") ? "▲" : "▼";
-        }
 
-        function selectCountry(country, flagUrl) {
-            const flag = document.getElementById("countryFlag");
-            const name = document.getElementById("countryName");
-            const arrow = document.getElementById("arrowIcon");
-            const dropdown = document.querySelector(".dropdown");
+// function selectCountry(country, flagUrl, targetPage = '') {
+//     const flag = document.getElementById("countryFlag");
+//     const name = document.getElementById("countryName");
+//     const arrow = document.getElementById("arrowIcon");
+//     const dropdown = document.querySelector(".dropdown");
 
-            // Update UI
-            flag.src = flagUrl;
-            name.textContent = country;
-            dropdown.classList.remove("show");
-            arrow.textContent = "▼";
+//     // 1️⃣ Update UI immediately
+//     flag.src = flagUrl;
+//     name.textContent = country;
+//     dropdown.classList.remove("show");
+//     arrow.textContent = "▼";
 
-            // 🔹 Submit hidden form to PHP to save in session
-            document.getElementById("countryInput").value = country.toLowerCase(); // 'uae' or 'uk'
-            document.getElementById("countryForm").submit();
-        }
+//     // 2️⃣ Submit hidden form to PHP with redirect
+//     document.getElementById("countryInput").value = country.toLowerCase();
+//     document.getElementById("redirectTo").value = targetPage;
+//     document.getElementById("countryForm").submit();
+//         // 🔹 Only redirect when user clicked
+//      let path = window.location.pathname.replace(/^\/|\/$/g, '');
+//      let parts = path.split('/');
+//      let lastSegment = parts[parts.length - 1];
 
-        // Close dropdown when clicking outside
-        window.addEventListener("click", function (e) {
-            const dropdown = document.querySelector(".dropdown");
-            const arrow = document.getElementById("arrowIcon");
+//      const swapPages = {
+//          "lunaro-pro-uk": "lunaro-pro-uae",
+//          "lunaro-pro-uae": "lunaro-pro-uk",
+//          "lunaro-benefits-uk": "lunaro-benefits-uae",
+//          "lunaro-benefits-uae": "lunaro-benefits-uk"
+//      };
 
-            if (!e.target.closest(".dropdown")) {
-                dropdown.classList.remove("show");
-                arrow.textContent = "▼";
-            }
-        });
+//      if (swapPages[lastSegment]) {
+//          let base = window.location.pathname.replace(/\/[^/]*$/, ''); // remove last segment
+//          window.location.href = base + "/" + swapPages[lastSegment] + "/";
+//      }
+// }
+
+
+
+
     </script>
 
 
@@ -876,7 +883,10 @@
         });
 
     </script>
+    
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>

@@ -142,55 +142,48 @@
 
     <div class="right-side">
       <div class="boc-item">
-        <div class="boc-question">Market Scenario Example</div>
+        <div class="boc-question">Shares Trading Example:</div>
         <div class="boc-answer">
-          We offer branding, digital marketing, performance campaigns, and content
-          strategy tailored to your business goals.
+           If you believe a company like Tesla is poised for growth due to new product launches, you can trade its shares to potentially profit from the anticipated price increase. Share prices respond directly to company news, earnings reports, and market sentiment about the company's future prospects.
         </div>
       </div>
 
       <div class="boc-item">
         <div class="boc-question">Indices Trading Example</div>
         <div class="boc-answer">
-          We offer branding, digital marketing, performance campaigns, and content
-          strategy tailored to your business goals.
+          If you expect the UK economy to perform well over the next quarter, trading the UK100 allows you to participate in the general movement of large UK companies without having to pick individual shares. This approach provides broader market exposure while reducing single-company risk.
         </div>
       </div>
 
       <div class="boc-item">
         <div class="boc-question">Commodities Trading Example</div>
         <div class="boc-answer">
-          We offer branding, digital marketing, performance campaigns, and content
-          strategy tailored to your business goals.
+         If geopolitical instability is affecting oil supply, you can trade oil to potentially benefit from rising prices. Commodity markets often react quickly to supply disruptions, weather events, and geopolitical developments, creating trading opportunities for informed traders.
         </div>
       </div>
 
       <div class="boc-item">
         <div class="boc-question">Forex Trading Example</div>
         <div class="boc-answer">
-          We offer branding, digital marketing, performance campaigns, and content
-          strategy tailored to your business goals.
+         If you anticipate the US Federal Reserve will raise interest rates, you might expect the USD to strengthen against other currencies, such as the EUR or GBP, presenting an opportunity to trade accordingly. Currency markets are highly sensitive to central bank policies and economic data releases.
         </div>
       </div>
       <div class="boc-item">
         <div class="boc-question">Bond Trading Example</div>
         <div class="boc-answer">
-          We offer branding, digital marketing, performance campaigns, and content
-          strategy tailored to your business goals.
+          If you expect UK interest rates to rise, you would perhaps expect current UK Gilts to fall. This is because in theory, there are better investment returns elsewhere, for example from Gilts offering higher interest payments. As interest rates rise, the assumption is that the price of existing UK Gilts will fall.
         </div>
       </div>
       <div class="boc-item">
         <div class="boc-question">ETF Trading Example</div>
         <div class="boc-answer">
-          We offer branding, digital marketing, performance campaigns, and content
-          strategy tailored to your business goals.
+          If you believe a sector, like automobiles, may be impacted due to political decisions, you can trade an ETF to capture the movement of the sector, rather than having to trade individual assets. This provides diversified exposure to sector trends through a single trade.
         </div>
       </div>
       <div class="boc-item">
         <div class="boc-question">Share Baskets Example</div>
         <div class="boc-answer">
-          We offer branding, digital marketing, performance campaigns, and content
-          strategy tailored to your business goals.
+          If you believe a type of share, like chip makers in general, may be impacted due to the current economic climate, you can trade a specially created Share Basket to capture the movement of the sector, rather than having to trade individual assets.
         </div>
       </div>
     </div>

@@ -167,7 +167,8 @@
                     FCA Regulated
                 </h4>
                 <p>
-                    Lunaro is authorised and regulated by the Financial Conduct Authority (FCA), ensuring compliance
+                    Lunaro is a trading name of Lunaro Financial Services Ltd which
+                    authorised and regulated by the Financial Conduct Authority (FCA), ensuring compliance
                     with the UK's stringent standards for client fund protection, operational integrity, and market
                     conduct.
                     FCA register number:184333
@@ -182,7 +183,6 @@
                 <h4 style="font-weight: 700;">
                     Industry Recognition
                 </h4>
-                <br>
                 <div class="advantage-item">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bullet-circular-check.png"
                         alt="check Icon">

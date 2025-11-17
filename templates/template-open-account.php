@@ -1810,7 +1810,7 @@ p {
 
 <body>
     <?php   
-load_country_header();
+     get_header('logo');
     ?>
  
 

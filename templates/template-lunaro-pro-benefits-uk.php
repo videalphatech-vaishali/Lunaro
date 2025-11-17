@@ -287,7 +287,7 @@
             }
 
             .benefit-item {
-                align-items: flex-start;
+                align-items: center;
             }
 
             .benefit-text {
@@ -461,86 +461,90 @@
                 max-width: 1320px;
             }
         }
+
         /* exclusive section css start here */
 
 
 
-    .article {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 20px;
-      padding: 20px;
-      max-width: 1320px;
-      margin: auto;
-    }
-
-    .article-feature {
-      
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      display: flex;              
-      align-items: flex-start;   
-      gap: 20px;                 
-    }
-
-    .article-feature h2 {
-      flex: 0 0 250px;           
-      font-size: 1.5rem;
-      margin: 0;
-      color: #fff;
-      line-height: 1.1; 
-    }
-
-    .article-feature p {
-      flex: 1;                    
-      font-size: 1rem;
-      line-height: 1.6;
-      color: #fff;
-      margin: 0;
-    }
-
-   
-
-    /* Extra small screens (≤576px) */
-    @media (max-width: 576px) {
-        .article{
-            padding: 0;
+        .article {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1320px;
+            margin: auto;
         }
-      .article-feature {
-        flex-direction: column;   
-        display: block;
-        padding: 0;
-      }
-      .article-feature h2 {
-        font-size: 1.2rem;
-        margin-bottom: 20px;
-      }
-      .article-feature p {
-        font-size: 0.9rem;
-      }
-    }
 
-    /* Medium screens (≥768px) */
-    @media (min-width: 768px) {
-      .article {
-        grid-template-columns: 1fr;
-      }
-    }
+        .article-feature {
 
-    /* Large screens (≥992px) */
-    @media (min-width: 992px) {
-      .article {
-        grid-template-columns: 1fr ;
-      }
-    }
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
 
-    /* Extra Large (≥1200px) */
-    @media (min-width: 1200px) {
-      .article {
-        grid-template-columns: 1fr;
-      }
-    }
+        .article-feature h2 {
+            flex: 0 0 250px;
+            font-size: 1.5rem;
+            margin: 0;
+            color: #fff;
+            line-height: 1.1;
+        }
+
+        .article-feature p {
+            flex: 1;
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #fff;
+            margin: 0;
+        }
+
+
+
+        /* Extra small screens (≤576px) */
+        @media (max-width: 576px) {
+            .article {
+                padding: 0;
+            }
+
+            .article-feature {
+                flex-direction: column;
+                display: block;
+                padding: 0;
+            }
+
+            .article-feature h2 {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+
+            .article-feature p {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Medium screens (≥768px) */
+        @media (min-width: 768px) {
+            .article {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Large screens (≥992px) */
+        @media (min-width: 992px) {
+            .article {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Extra Large (≥1200px) */
+        @media (min-width: 1200px) {
+            .article {
+                grid-template-columns: 1fr;
+            }
+        }
 
 
 
@@ -818,11 +822,11 @@
         }
 
 
-        .account-information{
+        .account-information {
             margin-top: 30px;
         }
 
-        .account-information p{
+        .account-information p {
             color: #fff;
             line-height: 1.1;
             margin-bottom: 20px;
@@ -942,235 +946,265 @@
                 max-width: 1320px;
             }
         }
-
-
-
-
-
     </style>
 </head>
 
 <body>
 
-<section class="lunaro-benefits-uk-body">
-    <section class="lunaro-herocontainer">
+    <section class="lunaro-benefits-uk-body">
+        <section class="lunaro-herocontainer">
 
-        <div class="lunaro-hero">
-            <!-- Left Content -->
-            <div class="lunaro-text">
-                <h1>Lunaro Pro</h1>
+            <div class="lunaro-hero">
+                <!-- Left Content -->
+                <div class="lunaro-text">
+                    <h1>Lunaro Pro</h1>
+                    <p>
+                        Unlock Institutional-grade tools designed for professional
+                        traders. Access enhanced leverage, reduced margins and dedicated
+                        account support that serious traders demand.
+                    </p>
+                </div>
+
+                <!-- Right Image -->
+                <div class="lunaro-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lunaro-hero.png"
+                        alt="lunaro.png">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-section">
+            <div class="benefits-header">
+                <h2>Lunaro Pro benefits</h2>
                 <p>
-                    Unlock Institutional-grade tools designed for professional
-                    traders. Access enhanced leverage, reduced margins and dedicated
-                    account support that serious traders demand
+                    Experience the advantages that set professional traders apart from retail investors.
                 </p>
             </div>
 
-            <!-- Right Image -->
-            <div class="lunaro-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lunaro-hero.png" alt="lunaro.png">
-
-            </div>
-        </div>
-    </section>
-
-    <section class="benefits-section">
-        <div class="benefits-header">
-            <h2>Lunaro Pro benefits</h2>
-            <p>
-                Experience the advantages that set professional traders apart from retail investors.
-            </p>
-        </div>
-
-        <div class="benefits-list">
-            <div class="benefit-item">
-                <div class="benefit-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/message-chat-circle.png" alt=""></div>
-                <div class="benefit-text">Enhanced leverage up to 250:1 on major pairs</div>
-            </div>
-            <div class="benefit-item">
-                <div class="benefit-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bar-chart-07.png" alt=""></div>
-                <div class="benefit-text">Reduced margin requirements from 0.4%</div>
-            </div>
-            <div class="benefit-item">
-                <div class="benefit-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/message-question-circle.png" alt="message-question-circle"></div>
-                <div class="benefit-text">Dedicated relationship manager</div>
-            </div>
-            <div class="benefit-item">
-                <div class="benefit-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/user-check-01.png" alt="user-check"></div>
-                <div class="benefit-text">Invites to exclusive events</div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-      <div class="article">
-    <div class="article-feature">
-      <h2>Higher Leverage</h2>
-      <p>Trade with enhanced leverage ratios up to 250:1 on
-         major currency pairs and 250:1 on indices, allowing you to maximise
-         capital efficiency and trading opportunities. Please note that while
-         higher leverage increases profit potential, it equally amplifies potential
-         losses</p>
-    </div>
-
-    <div class="article-feature">
-      <h2>Reduced Margin Requirements</h2>
-      <p>Benefit from significantly lower margin requirements starting from 0.4% on major forex pairs, enabling you to diversify positions and optimize portfolio allocation.</p>
-    </div>
-
-    <div class="article-feature">
-      <h2>VIP Events & Hospitality</h2>
-      <p>Enjoy exclusive access to premium lifestyle and entertainment experiences, alongside invitations to private trading seminars and market insight events. Designed to connect our professional clients through a blend of networking and world-class hospitality.</p>
-    </div>
-  </div>
-
-
-
-
-
-    <section class="exclusive-services">
-        <h2>Exclusive Services</h2>
-
-        <div class="exclusive-services-cards">
-            <!-- Card 1 -->
-            <div class="exclusive-card">
-                <div class="exclusive-icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bank-note-03.png" alt="Cash Rebate Icon">
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <div class="benefit-icon"><img
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/message-chat-circle.png"
+                            alt=""></div>
+                    <div class="benefit-text">Enhanced leverage up to 250:1 on major pairs</div>
                 </div>
-                <h3>Cash Rebate Programs</h3>
-                <p>
-                    Earn monthly cash rebates based on trading volumne across forex and indices markets, with tiers starting from $5M monthly notional volumne, 
+                <div class="benefit-item">
+                    <div class="benefit-icon"><img
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/bar-chart-07.png" alt="">
+                    </div>
+                    <div class="benefit-text">Reduced margin requirements from 0.4%</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><img
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/message-question-circle.png"
+                            alt="message-question-circle"></div>
+                    <div class="benefit-text">Dedicated relationship manager</div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><img
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/user-check-01.png"
+                            alt="user-check"></div>
+                    <div class="benefit-text">Invites to exclusive events</div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <div class="article">
+            <div class="article-feature">
+                <h2>Higher Leverage</h2>
+                <p>Trade with enhanced leverage ratios up to 250:1 on
+                    major currency pairs and 250:1 on indices, allowing you to maximise
+                    capital efficiency and trading opportunities. Please note that while
+                    higher leverage increases profit potential, it equally amplifies potential
+                    losses.</p>
+            </div>
+
+            <div class="article-feature">
+                <h2>Reduced Margin Requirements</h2>
+                <p>Benefit from significantly lower margin requirements starting from 0.4% on major forex pairs,
+                    enabling you to diversify positions and optimise portfolio allocation.</p>
+            </div>
+
+            <div class="article-feature">
+                <h2>VIP Events & Hospitality</h2>
+                <p>Enjoy exclusive access to premium lifestyle and entertainment experiences, alongside invitations to
+                    private trading seminars and market insight events. Designed to connect our professional clients
+                    through a blend of networking and world-class hospitality.</p>
+            </div>
+        </div>
+
+
+
+
+
+        <section class="exclusive-services">
+            <h2>Exclusive Services</h2>
+
+            <div class="exclusive-services-cards">
+                <!-- Card 1 -->
+                <div class="exclusive-card">
+                    <div class="exclusive-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bank-note-03.png"
+                            alt="Cash Rebate Icon">
+                    </div>
+                    <h3>Cash Rebate Programs</h3>
+                    <p>
+                    Earn monthly cash rebates based on trading volume across
+                    forex and indices markets, with tiers starting from $5M
+                    monthly notional volumne, 
                     subject to conditions.
-                </p>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="exclusive-card">
-                <div class="exclusive-icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/calendar.png" alt="VIP Events Icon">
+                    </p>
                 </div>
-                <h3>VIP Events & Hospitality</h3>
-                <p>
-                    Receive invitations to exclusive trading seminars, market outlook events, and networking opportunities with fellow professional traders.
-                </p>
-            </div>
 
-            <!-- Card 3 -->
-            <div class="exclusive-card">
-                <div class="exclusive-icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/coins-stacked-01.png" alt="Credit Facilities Icon">
+                <!-- Card 2 -->
+                <div class="exclusive-card">
+                    <div class="exclusive-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/calendar.png"
+                            alt="VIP Events Icon">
+                    </div>
+                    <h3>VIP Events & Hospitality</h3>
+                    <p>
+                    Receive invitations to exclusive trading seminars, market
+                    outlook events, and networking opportunities with fellow
+                    professional traders.</div>
+
+                <!-- Card 3 -->
+                <div class="exclusive-card">
+                    <div class="exclusive-icon">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/coins-stacked-01.png"
+                            alt="Credit Facilities Icon">
+                    </div>
+                    <h3>Credit Facilities</h3>
+                    <p>
+                        Subject to approval, access credit facilities to optimise your trading capital and enhance
+                        position
+                        flexibility.
+                    </p>
                 </div>
-                <h3>Credit Facilities</h3>
-                <p>
-                    Subject to approval, access credit facilities to optimise your trading capital and enhance position
-                    flexibility.
-                </p>
             </div>
-        </div>
+        </section>
+
+        <section class="services-section">
+            <h2>Professional Support & Services</h2>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Relationship_manager.png"
+                        alt="Manager">
+                </div>
+                <div class="service-content">
+                    <h3>Dedicated Relationship Manager</h3>
+                    <p>Receive personalised service from your assigned relationship manager who understands your trading
+                        style and provides tailored market insights and account optimisation.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Trade_execution.png"
+                        alt="Trade Execution">
+                </div>
+                <div class="service-content">
+                    <h3>Enhanced Trade Execution</h3>
+                    <p>Benefit from fast order routing and deep liquidity access designed for consistent performance
+                        during
+                        both normal and volatile market conditions.*</p>
+                    <small>*Execution speeds vary based on market conditions, order characteristics, and infrastructure
+                        factors. Historical average execution speeds are approximately 67ms, though individual
+                        experiences
+                        may differ. Past performance is not indicative of future results</small>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Trading_tools.png"
+                        alt="Trading Tools">
+                </div>
+                <div class="service-content">
+                    <h3>Advanced Trading Tools</h3>
+                    <p>Access professional-grade analysis tools, real-time market data feeds, and algorithmic trading
+                        capabilities designed for sophisticated strategies.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="account-comparsion">
+            <h1>Account Comparison</h1>
+            <p class="subtitle">Compare the enhanced benefits and features available with Lunaro Pro versus our standard
+                retail trading account.</p>
+
+            <div class="comparison-container">
+                <div class="card">
+                    <h2>Standard Account</h2>
+                    <p class="desc">For teams to grow with clarity, consistency, and cost efficiency.</p>
+                    <button>Get Started</button>
+                    <ul class="features">
+                        <li>Maximum Leverage: 30:1 (FCA Retail Limit)</li>
+                        <li>Minimum Spread: From 0.34 pips</li>
+                        <li>Rebate: No rebate</li>
+                        <li>Margin Requirements: 3.33% minimum</li>
+                        <li>Account Manager: General Support</li>
+                        <li>Advanced Tools: Basic Platform features</li>
+                        <li>Market Access: All retail products</li>
+                        <li>Negative Balance Protection: Protected</li>
+                        <li>Regulatory Protection: Full FCA retail protection</li>
+                    </ul>
+                </div>
+
+                <div class="card pro">
+                    <h2>Lunaro Pro</h2>
+                    <p class="desc">For teams aiming with performance, precision, and strategy.</p>
+                   <a href="/open-pro-account"> <button class="professional-btn">Create Professional Account</button></a>
+                    <ul class="features lunaro-features">
+                        <li>Maximum Leverage: Up to 250:1</li>
+                        <li>Minimum Spread: From 0.34 pips</li>
+                        <li>Rebate: Up to 33.3%</li>
+                        <li>Margin Requirements: From 0.4%</li>
+                        <li>Account Manager: Dedicated relationship manager</li>
+                        <li>Advanced Tools: Professional trading suite</li>
+                        <li>Market Access: Additional professional products</li>
+                        <li>Negative Balance Protection: Losses may exceed deposits</li>
+                        <li>Regulatory Protection: Reduced professional protections</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+            <div class="account-information">
+                <p>Professional Client Notice: As a professional client, you are not entitled to negative balance
+                    protection under FCA rules. This means you may lose more than your account balance if adverse market
+                    movements occur. You must have adequate risk management procedures in place and maintain sufficient
+                    capital to meet potential margin calls.</p>
+                <p>Important Regulatory Disclosure: Professional clients receive significantly reduced regulatory
+                    protections compared to retail clients under FCA rules (COBS 3.5). Key differences include: no
+                    negative balance protection - You may lose more than your deposits; Reduced appropriateness
+                    assessments - Less obligation on us to assess product suitability; Different best execution
+                    standards - Best execution appropriate to professional sophistication levels; Limited access to
+                    Financial Ombudsman Service - Complaints may not be eligible for FOS adjudication; FSCS protection
+                    limits may differ - Financial Services Compensation Scheme coverage may be reduced or unavailable
+                    for certain claim types; Risk warnings; higher leverage; different rules for communications and
+                    financial promotions; Assumed level of experience to this list. You must acknowledge in writing that
+                    you understand these reduced protections before we can categorise you as a professional client.</p>
+
+            </div>
+
+              <a href="/open-pro-account"><button class="footer-btn">Create Professional Account</button></a> 
+
+        </section>
+
+
+
     </section>
 
-    <section class="services-section">
-        <h2>Professional Support & Services</h2>
-
-        <div class="service-card">
-            <div class="service-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Relationship_manager.png" alt="Manager">
-            </div>
-            <div class="service-content">
-                <h3>Dedicated Relationship Manager</h3>
-                <p>Receive personalised service from your assigned relationship manager who understands your trading
-                    style and provides tailored market insights and account optimisation.</p>
-            </div>
-        </div>
-
-        <div class="service-card">
-            <div class="service-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Trade_execution.png" alt="Trade Execution">
-            </div>
-            <div class="service-content">
-                <h3>Enhanced Trade Execution</h3>
-                <p>Benefit from fast order routing and deep liquidity access designed for consistent performance during
-                    both normal and volatile market conditions.*</p>
-                <small>*Execution speeds vary based on market conditions, order characteristics, and infrastructure
-                    factors. Historical average execution speeds are approximately 67ms, though individual experiences
-                    may differ. Past performance is not indicative of future results</small>
-            </div>
-        </div>
-
-        <div class="service-card">
-            <div class="service-image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Trading_tools.png" alt="Trading Tools">
-            </div>
-            <div class="service-content">
-                <h3>Advanced Trading Tools</h3>
-                <p>Access professional-grade analysis tools, real-time market data feeds, and algorithmic trading
-                    capabilities designed for sophisticated strategies.</p>
-            </div>
-        </div>
-
-    </section>
-
-
-    <section class="account-comparsion">
-        <h1>Account Comparison</h1>
-        <p class="subtitle">Compare the enhanced benefits and features available with Lunaro Pro versus our standard
-            retail trading account.</p>
-
-        <div class="comparison-container">
-            <div class="card">
-                <h2>Standard Account</h2>
-                <p class="desc">For teams to grow with clarity, consistency, and cost efficiency.</p>
-                <button>Get Started</button>
-                <ul class="features">
-                    <li>Maximum Leverage: 30:1 (FCA Retail Limit)</li>
-                    <li>Minimum Spread: From 0.34 pips</li>
-                    <li>Rebate: No rebate</li>
-                    <li>Margin Requirements: 3.33% minimum</li>
-                    <li>Account Manager: General Support</li>
-                    <li>Advanced Tools: Basic Platform features</li>
-                    <li>Market Access: All retail products</li>
-                    <li>Negative Balance Protection: Protected</li>
-                    <li>Regulatory Protection: Full FCA retail protection</li>
-                </ul>
-            </div>
-
-            <div class="card pro">
-                <h2>Lunaro Pro</h2>
-                <p class="desc">For teams aiming with performance, precision, and strategy.</p>
-                <button class="professional-btn">Create Professional Account</button>
-                <ul class="features lunaro-features">
-                    <li>Maximum Leverage: Up to 250:1</li>
-                    <li>Minimum Spread: From 0.34 pips</li>
-                    <li>Rebate: Up to 33.3%</li>
-                    <li>Margin Requirements: From 0.4%</li>
-                    <li>Account Manager: Dedicated relationship manager</li>
-                    <li>Advanced Tools: Professional trading suite</li>
-                    <li>Market Access: Additional professional products</li>
-                    <li>Negative Balance Protection: Losses may exceed deposits</li>
-                    <li>Regulatory Protection: Reduced professional protections</li>
-                </ul>
-            </div>
-        </div>
-
-
-
-        <div class="account-information">
-            <p>*Professional Client Notice: As a professional client, you are not entitled to negative balance protection under FCA rules. This means you may lose more than your account balance if adverse market movements occur. You must have adequate risk management procedures in place and maintain sufficient capital to meet potential margin calls.</p>
-            <p>****Important Regulatory Disclosure: Professional clients receive significantly reduced regulatory protections compared to retail clients under FCA rules (COBS 3.5). Key differences include: no negative balance protection - You may lose more than your deposits; Reduced appropriateness assessments - Less obligation on us to assess product suitability; Different best execution standards - Best execution appropriate to professional sophistication levels; Limited access to Financial Ombudsman Service - Complaints may not be eligible for FOS adjudication; FSCS protection limits may differ - Financial Services Compensation Scheme coverage may be reduced or unavailable for certain claim types; Risk warnings; higher leverage; different rules for communications and financial promotions; Assumed level of experience to this list. You must acknowledge in writing that you understand these reduced protections before we can categorise you as a professional client.</p>
-
-        </div>
-
-        <button class="footer-btn">Create Professional Account</button>
-
-    </section>
-
-
-    
-</section>
-
-        <?php
+    <?php
   load_country_footer();
     ?>
 </body>

@@ -539,6 +539,17 @@
         grid-template-columns: 1fr;
       }
     }
+    
+  .footer-btn {
+     background-color: #f5f4fa;
+     color: #000;
+     border: none;
+     padding: 14px 30px;
+     border-radius: 30px;
+     font-weight: 600;
+     cursor: pointer;
+     margin-bottom: 40px;
+     }
     </style>
 </head>
 
@@ -554,7 +565,7 @@
                 <p>
                     Unlock Institutional-grade tools designed for professional
                     traders. Access enhanced leverage, reduced margins and dedicated
-                    account support that serious traders demand
+                    account support that serious traders demand.
                 </p>
             </div>
 
@@ -666,6 +677,7 @@
     </section>
 
 
+              <a href="/open-pro-account"><button class="footer-btn">Create Professional Account</button></a> 
 </section>  
     <?php
   load_country_footer();

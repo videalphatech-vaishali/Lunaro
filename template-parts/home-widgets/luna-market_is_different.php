@@ -412,24 +412,32 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lightning-01.svg" alt="">
           </div>
           <h3>Lightning-Fast Execution</h3>
-          <p>Our cutting-edge infrastructure delivers trades in under 30ms, allowing traders to benefit from fast
-            execution. State-of-the-art technology with a user-friendly interface.</p>
+          <p>Our cutting-edge infrastructure delivers trades in under 30ms with 99.9% uptime. Experience institutional-grade technology with retail-friendly pricing.</p>
         </div>
         <div class="why-card">
           <div class="icon">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lock-01.svg" alt="">
           </div>
           <h3>Trusted & Regulated</h3>
-          <p>Highly transparent and regulated across multiple jurisdictions. Your funds are protected with segregated
-            accounts, ensuring peace of mind and professional support.</p>
+          <?php
+                  // get the country from session or default to 'uk'
+                  $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+                  if ($country === 'uae') {
+
+          ?>
+          <p>Fully licensed and regulated across multiple jurisdictions. Your funds are protected with segregated accounts and negative balance protection as standard.</p>
+       <?php
+            }else{
+        ?>
+          <p> Fully licensed and regulated across multiple jurisdictions. Retail funds are protected via segregated accounts.</p>
+        <?php } ?>
         </div>
         <div class="why-card">
           <div class="icon">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/message-chat-square.svg" alt="">
           </div>
           <h3>24/5 Professional Support</h3>
-          <p>Get guidance from experienced traders and risk managers. Access live chat, phone support, and dedicated
-            account management whenever you need it.</p>
+          <p>Get guidance from qualified market analysts and account managers. Access live chat, phone support, and dedicated relationship management when you need it most.</p>
         </div>
       </div>
     </div>
@@ -454,7 +462,7 @@
                 <div>MIN SPREAD <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow down.svg" alt=""></div>
               </th>
               <th>
-                <div>MARGIN <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow down.svg" alt=""></div>
+                <div>RETAIL MARGIN <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow down.svg" alt=""></div>
               </th>
               <th>
                 <div>BUY PRICE <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow down.svg" alt=""></div>
@@ -465,9 +473,9 @@
               <th>
                 <div>WEEK <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow down.svg" alt=""></div>
               </th>
-              <th>
+              <!-- <th>
                 <div>TREND <img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow down.svg" alt=""></div>
-              </th>
+              </th> -->
             </tr>
           </thead>
 
@@ -475,79 +483,79 @@
             <tr data-symbol="GBPUSD">
               <td style="display:flex; align-items:center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/GBPUSD.png" alt=""> <span>GBPUSD</span></td>
               <td class="minSpread">0.00</td>
-              <td>1%</td>
+              <td>3.33%</td>
               <td class="price">
                 <div class="price-cell"><span>0.00</span><span class="arrow down">▼</span></div>
               </td>
-              <td class="positive">+0.00%</td>
-              <td class="positive">+0.00%</td>
-              <td>↗</td>
+              <td class="day">+0.00%</td>
+              <td class="week">+0.00%</td>
+             
             </tr>
             <tr data-symbol="USDCAD">
               <td style="display:flex; align-items:center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/USDCAD.png" alt=""> <span>USDCAD</span></td>
               <td class="minSpread">0.00</td>
-              <td>1%</td>
+              <td>3.33%</td>
               <td class="price">
                 <div class="price-cell"><span>0.00</span><span class="arrow down">▼</span></div>
               </td>
-              <td class="positive">+0.00%</td>
-              <td class="positive">+0.00%</td>
-              <td>↗</td>
+              <td class="day">+0.00%</td>
+              <td class="week">+0.00%</td>
+             
             </tr>
             <tr data-symbol="EURUSD">
               <td style="display:flex; align-items:center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/EURUSD.png" alt=""> <span>EURUSD</span></td>
               <td class="minSpread">0.00</td>
-              <td>1%</td>
+              <td>3.33%</td>
               <td class="price">
                 <div class="price-cell"><span>0.00</span><span class="arrow down">▼</span></div>
               </td>
-              <td class="positive">+0.00%</td>
-              <td class="positive">+0.00%</td>
-              <td>↗</td>
+              <td class="day">+0.00%</td>
+              <td class="week">+0.00%</td>
+             
             </tr>
             <tr data-symbol="USDJPY">
               <td style="display:flex; align-items:center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/USDJPY.png" alt=""> <span>USDJPY</span></td>
               <td class="minSpread">0.00</td>
-              <td>1%</td>
+              <td>3.33%</td>
               <td class="price">
                 <div class="price-cell"><span>0.00</span><span class="arrow down">▼</span></div>
               </td>
-              <td class="positive">+0.00%</td>
-              <td class="positive">+0.00%</td>
-              <td>↗</td>
+              <td class="day">+0.00%</td>
+              <td class="week">+0.00%</td>
+             
             </tr>
             <tr data-symbol="AUDUSD">
               <td style="display:flex; align-items:center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/AUDUSD.png" alt=""> <span>AUDUSD</span></td>
               <td class="minSpread">0.00</td>
-              <td>1%</td>
+              <td>3.33%</td>
               <td class="price">
                 <div class="price-cell"><span>0.00</span><span class="arrow down">▼</span></div>
               </td>
-              <td class="positive">+0.00%</td>
-              <td class="positive">+0.00%</td>
-              <td>↗</td>
+              <td class="day">+0.00%</td>
+              <td class="week">+0.00%</td>
+             
             </tr>
             <tr data-symbol="USDCHF">
               <td style="display:flex; align-items:center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/USDCHF.png" alt=""> <span>USDCHF</span></td>
               <td class="minSpread">0.00</td>
-              <td>1%</td>
+              <td>3.33%</td>
               <td class="price">
                 <div class="price-cell"><span>0.00</span><span class="arrow down">▼</span></div>
               </td>
-              <td class="positive">+0.00%</td>
-              <td class="positive">+0.00%</td>
-              <td>↗</td>
+              <td class="day">+0.00%</td>
+              <td class="week">+0.00%</td>
+             
             </tr>
             <tr data-symbol="NZDUSD">
               <td style="display:flex; align-items:center"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/NZDUSD.png" alt=""> <span>NZDUSD</span></td>
               <td class="minSpread">0.00</td>
-              <td>1%</td>
+              <td>3.33%</td>
               <td class="price">
                 <div class="price-cell"><span>0.00</span><span class="arrow down">▼</span></div>
               </td>
-              <td class="positive">+0.00%</td>
-              <td class="positive">+0.00%</td>
-              <td>↗</td>
+              <td class="day">+0.00%</td>
+              <td class="week">+0.00%</td>
+             
             </tr>
           </tbody>
         </table>
@@ -558,59 +566,118 @@
   </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
-  <script>
-    const hubUrl = "https://lunaromarket.vedakronos.com/dataHub";
-    const connection = new signalR.HubConnectionBuilder()
-      .withUrl(hubUrl)
-      .withAutomaticReconnect()
-      .build();
+<script>
+  const hubUrl = "https://lunaromarket.vedakronos.com/dataHub";
+  const FALLBACK_API = "https://lunaromarket.vedakronos.com/api/data/live";
+  const FALLBACK_TIMEOUT = 5000; 
 
-    const tableBody = document.getElementById("marketTable");
-    const previousPrices = {};
+  const connection = new signalR.HubConnectionBuilder()
+    .withUrl(hubUrl)
+    .withAutomaticReconnect()
+    .build();
 
-    async function start() {
-      try {
-        await connection.start();
-        console.log("✅ Connected to SignalR Hub");
-      } catch (err) {
-        console.error("❌ Connection failed:", err);
-        setTimeout(start, 5000);
-      }
+  const tableBody = document.getElementById("marketTable");
+  const previousPrices = {};
+  let lastUpdateTime = Date.now();
+
+  async function start() {
+    try {
+      await connection.start();
+      console.log(" Connected to SignalR Hub");
+    } catch (err) {
+      console.error(" Connection failed:", err);
+      setTimeout(start, 5000);
+    }
+  }
+
+  function updateRow(symbol, data) {
+    if (!symbol || !data) return;
+
+    const minSpread = data.minSpread?.toFixed?.(5) ?? "0.00000";
+    const lastPrice = parseFloat(data.askPrice ?? 0).toFixed(5);
+    const dayChange = parseFloat(data.dayChangePercent ?? 0);
+    const weekChange = parseFloat(data.weeklyChangePercent ?? 0);
+
+    const row = tableBody.querySelector(`tr[data-symbol="${symbol.toUpperCase()}"]`);
+    if (!row) return;
+
+    const spreadCell = row.querySelector(".minSpread");
+    const priceValue = row.querySelector(".price-cell span:first-child");
+    const dayCell = row.querySelector(".day");
+    const weekCell = row.querySelector(".week");
+    const arrow = row.querySelector(".arrow");
+
+    if (spreadCell) spreadCell.textContent = minSpread;
+
+    const prev = previousPrices[symbol] || 0;
+    priceValue.textContent = lastPrice;
+
+    // Main price arrow
+    if (parseFloat(lastPrice) > parseFloat(prev)) {
+      arrow.textContent = "▲";
+      arrow.classList.remove("down");
+      arrow.classList.add("up");
+    } else if (parseFloat(lastPrice) < parseFloat(prev)) {
+      arrow.textContent = "▼";
+      arrow.classList.remove("up");
+      arrow.classList.add("down");
     }
 
-    connection.on("ReceiveMessage", (symbol, data) => {
-      if (!symbol || !data) return;
+    previousPrices[symbol] = lastPrice;
 
-      const minSpread = data.minSpread?.toFixed?.(5) ?? "0.00000";
-      const lastPrice = parseFloat(data.bidPrice ?? 0).toFixed(5);
+    // Day change arrow
+    if (dayCell) {
+      dayCell.textContent = `${Math.abs(dayChange * 100).toFixed(2)}% ${dayChange >= 0 ? "▲" : "▼"}`;
+      dayCell.style.color = dayChange >= 0 ? "#00ff99" : "#ff4d4d";
+    }
 
-      const row = tableBody.querySelector(`tr[data-symbol="${symbol.toUpperCase()}"]`);
-      if (row) {
-        const spreadCell = row.querySelector(".minSpread");
-        const priceValue = row.querySelector(".price-cell span:first-child");
-        const arrow = row.querySelector(".arrow");
+    // Week change arrow
+    if (weekCell) {
+      weekCell.textContent = `${Math.abs(weekChange * 100).toFixed(2)}% ${weekChange >= 0 ? "▲" : "▼"}`;
+      weekCell.style.color = weekChange >= 0 ? "#00ff99" : "#ff4d4d";
+    }
+  }
 
-        if (spreadCell) spreadCell.textContent = minSpread;
+  connection.on("ReceiveMessage", (symbol, data) => {
+    lastUpdateTime = Date.now();
+    updateRow(symbol, data);
+  });
 
-        const prev = previousPrices[symbol] || 0;
-        priceValue.textContent = lastPrice;
+  start();
 
-        if (parseFloat(lastPrice) > parseFloat(prev)) {
-          arrow.textContent = "▲";
-          arrow.classList.remove("down");
-          arrow.classList.add("up");
-        } else if (parseFloat(lastPrice) < parseFloat(prev)) {
-          arrow.textContent = "▼";
-          arrow.classList.remove("up");
-          arrow.classList.add("down");
-        }
+  // Fallback API
+  async function checkSignalRHealth() {
+    if (Date.now() - lastUpdateTime > FALLBACK_TIMEOUT) {
+      console.warn("⚠️ SignalR inactive — fetching fallback API data...");
+      await fetchFromAPI();
+      lastUpdateTime = Date.now();
+    }
+  }
 
-        previousPrices[symbol] = lastPrice;
-      }
-    });
+  async function fetchFromAPI() {
+    try {
+      const res = await fetch(FALLBACK_API);
+      if (!res.ok) throw new Error("API fetch failed");
+      const apiData = await res.json();
 
-    start();
-  </script>
+      apiData.forEach(item => {
+        updateRow(item.Symbol, {
+          askPrice: item.LTP,
+          minSpread: item.MinSpread, // fallback, as API has no minSpread
+          dayChangePercent: item.DayChangePercent,
+          weeklyChangePercent: item.WeeklyChangePercent
+        });
+      });
+
+      console.log(" Table updated from API fallback");
+    } catch (err) {
+      console.error(" API Fallback Error:", err);
+    }
+  }
+
+  setInterval(checkSignalRHealth, 10000);
+</script>
+
 
 </body>
 

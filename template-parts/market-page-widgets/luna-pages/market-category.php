@@ -91,16 +91,14 @@
   <div class="mc-text-section">
     <h2 class="mc-title">Market categories</h2>
     <p class="mc-description">
-      Diversify your trading portfolio across multiple asset classes, each offering unique opportunities and risk characteristics.
-      Our comprehensive market access ensures you can capitalize on global economic trends and market movements.<br>
-      *Please note that all trading involves risk and you may lose some or all of your invested capital.
+     Diversify your trading portfolio across multiple asset classes, each offering unique opportunities and risk characteristics. Our comprehensive market access ensures you can capitalise on global economic trends and market movements.
     </p>
   </div>
 
   <div class="mc-list">
     <div class="mc-item">
       <div class="circular-container-icon">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lock-01.svg" alt="Indices">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/indices-icon.png" alt="Indices">
       </div>
       <h3>Indices</h3>
       <a href="#">Learn More</a>
@@ -108,7 +106,7 @@
 
     <div class="mc-item">
       <div class="circular-container-icon">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lock-01.svg" alt="Forex">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/forex-icon.png" alt="Forex">
       </div>
       <h3>Forex</h3>
       <a href="#">Learn More</a>
@@ -116,7 +114,7 @@
 
     <div class="mc-item">
       <div class="circular-container-icon">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lock-01.svg" alt="Commodities">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/commo-icon.png" alt="Commodities">
       </div>
       <h3>Commodities</h3>
       <a href="#">Learn More</a>
@@ -124,7 +122,7 @@
 
     <div class="mc-item">
       <div class="circular-container-icon">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lock-01.svg" alt="Shares">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/shares-icon.png" alt="Shares">
       </div>
       <h3>Shares</h3>
       <a href="#">Learn More</a>
@@ -132,7 +130,7 @@
 
     <div class="mc-item">
       <div class="circular-container-icon">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lock-01.svg" alt="ETFs">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/etf-icon.png" alt="ETFs">
       </div>
       <h3>ETFs</h3>
       <a href="#">Learn More</a>
@@ -140,7 +138,7 @@
 
     <div class="mc-item">
       <div class="circular-container-icon">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lock-01.svg" alt="Treasuries">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/treasuries-icon.png" alt="Treasuries">
       </div>
       <h3>Treasuries</h3>
       <a href="#">Learn More</a>

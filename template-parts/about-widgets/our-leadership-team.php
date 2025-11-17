@@ -335,11 +335,11 @@
             </div>
         </div>    <!-- line -->
     <p class="cta-line">Whether you're taking your first steps into trading or you're a
-        seasoned professional managing significant capital , Lunaro<br>Markets provides the infrastructure, tools, and
+        seasoned professional managing significant capital , Lunaro<br> provides the infrastructure, tools, and
         support to help you trade with confidence.
     </p>
     <!-- cta-btn -->
-    <div class="olt-cta-btn">Learn more about Lunaro Markets</div>
+    <div class="olt-cta-btn">Learn more about Lunaro</div>
 
     <?php } ?>
     </div>

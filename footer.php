@@ -1741,14 +1741,14 @@ video {
   
   <div class="risk-warining">
 <p><strong>Risk Warning:</strong>CFDs and spread bets are complex instruments and come with a high risk of losing money rapidly due to leverage.</p>
-<p><strong>Approximately 80% of retail client accounts lose money when trading in CFDs and spread bets.</strong></p>
-<p>You should consider whether you understand how CFDs and spread bets work and whether you can afford to take the high risk of losing your money.</p>  
-<p>Lunaro is a Trading name of Lunaro Financial Services Limited.</p>
-<p>Lunaro Financial Services Limited is a company registered in England and Wales under register number 03148972. Lunaro Financial Services Limited is authorized and regulated by the Financial Conduct Authority, FCA Register number 184333.</p>
-<p>Registered Address: 16 Great Queen Street, Convent Garden, London, United Kingdom, WC2B5AH</p>
-<p>†Spread Betting is currently free from Capital Gains Tax (CGT) and there is no stamp duty in the United Kingdom. It should be noted that tax treatment depends on your individual circumstances and may be subject to change in the future. Tax law can be changed or may differ if you pay tax in a jurisdiction other than the UK.</p>
-<p>Disclaimer</p>
-<p>The information on this site is not directed nor is intended for distribution to, or use by, any person in any country or jurisdiction where such distribution or use would be contrary to local laws or regulations. Such residents and countries include, but are not limited to, the United States.</p>
+<br><p><strong>Approximately 80% of retail client accounts lose money when trading in CFDs and spread bets.</strong></p>
+<br><p>You should consider whether you understand how CFDs and spread bets work and whether you can afford to take the high risk of losing your money.</p>  
+<br><p>Lunaro is a Trading name of Lunaro Financial Services Limited.</p>
+<br><p>Lunaro Financial Services Limited is a company registered in England and Wales under register number 03148972. Lunaro Financial Services Limited is authorized and regulated by the Financial Conduct Authority, FCA Register number 184333.</p>
+<br><p>Registered Address: 16 Great Queen Street, Convent Garden, London, United Kingdom, WC2B5AH</p>
+<br><p>†Spread Betting is currently free from Capital Gains Tax (CGT) and there is no stamp duty in the United Kingdom. It should be noted that tax treatment depends on your individual circumstances and may be subject to change in the future. Tax law can be changed or may differ if you pay tax in a jurisdiction other than the UK.</p>
+<br><p>Disclaimer</p>
+<br><p>The information on this site is not directed nor is intended for distribution to, or use by, any person in any country or jurisdiction where such distribution or use would be contrary to local laws or regulations. Such residents and countries include, but are not limited to, the United States.</p>
 <p>Apple, the Apple logo, iPod, iPad, iPod touch, and iTunes are trademarks of Apple Inc., registered in the US and other countries. iPhone is a trademark of Apple Inc. App Store is a service mark of Apple Inc.</p>
 </div>
 

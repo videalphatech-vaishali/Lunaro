@@ -1,0 +1,106 @@
+.mobile-menu-btn {
+    padding: 10px 15px;
+    font-size: 22px;
+    background: #333;
+    color: #fff;
+    border: none;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 9;
+}
+
+/* Drawer */
+.drawer {
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 260px;
+    height: 100%;
+    background: #fff;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    transition: 0.3s ease;
+    padding: 15px;
+}
+
+.drawer.open {
+    left: 0;
+}
+
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.close-btn {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Country Select Box */
+.country-select {
+    margin-top: 20px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.country-select img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.country-select span {
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    margin-left: auto;
+}
+
+/* Dropdown List */
+.country-dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: none;
+}
+
+.country-dropdown.show {
+    display: block;
+}
+
+.country-dropdown li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.country-dropdown li img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.country-dropdown li:hover {
+    background: #f0f0f0;
+}

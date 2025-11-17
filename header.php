@@ -233,15 +233,18 @@
             right: -100%;
             width: 85%;
             max-width: 400px;
-            height: 100vh;
+            height: 100dvh;
             background: var(--glass);
             backdrop-filter: blur(10px);
             transition: right .4s ease;
-            z-index: 120;
+            z-index: 999999;
             overflow-y: auto;
             box-shadow: -5px 0 20px rgba(0, 0, 0, 0.4);
             color: #fff;
             padding: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .mobile-drawer.active {
@@ -601,6 +604,84 @@
                 margin: auto;
             }
         }
+
+
+
+
+
+    /* Dropdown Container */
+ .flag-button {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+
+    .country-dropdown {
+      position: relative;
+      width: 150px;
+    }
+
+    /* Selected Country (Black Box) */
+
+    .country-selected {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background: #000;
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .country-selected img {
+      width: 26px;
+      height: 18px;
+      object-fit: cover;
+    }
+
+    /* Dropdown List (OPEN ABOVE) */
+    .country-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background: #000;
+      border-radius: 6px;
+      display: none;
+      position: absolute;
+      width: 100%;
+      right: 0;
+
+      /* OPEN ABOVE */
+      bottom: 100%;
+      top: auto;
+      margin-bottom: 8px;
+
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      z-index: 999;
+    }
+
+    .country-list li {
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .country-list li img {
+      width: 26px;
+      height: 18px;
+    }
+
+    .country-list li:hover {
+      background: #eee;
+    }
     </style>
 </head>
 
@@ -699,17 +780,7 @@
 
             <!-- Desktop actions -->
             <div class="actions" aria-hidden="false">
-                <!-- Popup -->
-                <div id="popup" class="popup">
-                    <div class="popup-box">
-                        <span class="close" id="closePopup">&times;</span>
-                        <h2>Select Account Type</h2>
-                        <div class="popup-btns">
-                            <a href="/sign-up-individual"><button class="popup-btn">INDIVIDUAL</button></a>
-                            <a href="/sign-up-corporate"> <button class="popup-btn">CORPORATE</button></a>
-                        </div>
-                    </div>
-                </div>
+                
                 <a href="https://crm.lunaro.com"> <button class="btn">Log in</button></a>
                 <button
                     class="signup px-4 py-2 bg-[#FFF4E4] text-black hover:bg-[#fff4e4ee] font-bold text-sm rounded-full transition">
@@ -734,6 +805,9 @@
 
     <!-- Mobile Drawer -->
     <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <div>
+
+       
         <div class="drawer-top">
             <div style="width:120px"><img
                     src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo-horizontal.png" alt="Logo">
@@ -759,11 +833,10 @@
                 <div class="mobile-nav-header">
                     <span><a href="trading/">Trading</a></span><i class="fas fa-chevron-down"></i>
                 </div>
+
                 <div class="mobile-submenu">
+                    <div style="padding:10px 0"><a href="/spread-betting">Spread Betting</a></div>
                     <div style="padding:10px 0"><a href="/cfd-trading">CFD Trading</a></div>
-                    <div style="padding:10px 0"><a href="/etd-trading">ETD Trading</a></div>
-                    <div style="padding:10px 0"><a href="/cme-futures/">CME Group Futures</a></div>
-                    <div style="padding:10px 0"><a href="/cme-options">CME Group Options</a></div>
                 </div>
             </div>
 
@@ -801,9 +874,45 @@
         <div class="mobile-nav-header">Retail & Professional</div>
       </div> -->
         </nav>
+         </div>
+
+
+          <div class="flag-button">
+    <div class="country-dropdown">
+      <div class="country-selected" id="selectedCountry">
+        <img src="https://flagcdn.com/w40/ae.png" alt="UAE Flag">
+        <span>UAE</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+
+      <ul class="country-list" id="countryList">
+        <li data-country="uae" data-flag="https://flagcdn.com/w40/ae.png">
+          <img src="https://flagcdn.com/w40/ae.png"> UAE
+        </li>
+
+        <li data-country="uk" data-flag="https://flagcdn.com/w40/gb.png">
+          <img src="https://flagcdn.com/w40/gb.png"> UK
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
     </div>
 
     <div class="overlay" id="overlay"></div>
+
+    <!-- Popup -->
+                <div id="popup" class="popup">
+                    <div class="popup-box">
+                        <span class="close" id="closePopup">&times;</span>
+                        <h2>Select Account Type</h2>
+                        <div class="popup-btns">
+                            <a href="/sign-up-individual"><button class="popup-btn">INDIVIDUAL</button></a>
+                            <a href="/sign-up-corporate"> <button class="popup-btn">CORPORATE</button></a>
+                        </div>
+                    </div>
+                </div>
 
 
 
@@ -886,43 +995,37 @@
         }); 
     </script>
 
-    <script>
-        function toggleDropdown() {
-            const dropdown = document.querySelector(".dropdown");
-            const arrow = document.getElementById("arrowIcon");
 
-            dropdown.classList.toggle("show");
-            arrow.textContent = dropdown.classList.contains("show") ? "▲" : "▼";
-        }
+<!-- mobile drop down country drop down js -->
 
-        function selectCountry(country, flagUrl) {
-            const flag = document.getElementById("countryFlag");
-            const name = document.getElementById("countryName");
-            const arrow = document.getElementById("arrowIcon");
-            const dropdown = document.querySelector(".dropdown");
+<script>
+    const selected = document.getElementById("selectedCountry");
+    const countryList = document.getElementById("countryList");
 
-            // Update UI
-            flag.src = flagUrl;
-            name.textContent = country;
-            dropdown.classList.remove("show");
-            arrow.textContent = "▼";
+    selected.addEventListener("click", () => {
+      countryList.style.display =
+        countryList.style.display === "block" ? "none" : "block";
+    });
 
-            // 🔹 Submit hidden form to PHP to save in session
-            document.getElementById("countryInput").value = country.toLowerCase(); // 'uae' or 'uk'
-            document.getElementById("countryForm").submit();
-        }
+    document.querySelectorAll(".country-list li").forEach(item => {
+      item.addEventListener("click", () => {
+        const flag = item.getAttribute("data-flag");
+        const name = item.textContent.trim();
 
-        // Close dropdown when clicking outside
-        window.addEventListener("click", function (e) {
-            const dropdown = document.querySelector(".dropdown");
-            const arrow = document.getElementById("arrowIcon");
+        selected.querySelector("img").src = flag;
+        selected.querySelector("span").textContent = name;
 
-            if (!e.target.closest(".dropdown")) {
-                dropdown.classList.remove("show");
-                arrow.textContent = "▼";
-            }
-        });
-    </script>
+        countryList.style.display = "none";
+      });
+    });
+
+    // Close dropdown on outside click
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest(".country-dropdown")) {
+        countryList.style.display = "none";
+      }
+    });
+  </script>
 
 
     <!-- for signup button -->
@@ -975,6 +1078,58 @@
         });
     </script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- mobile dropdown country change -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const selected = document.getElementById('selectedCountry');
+    const list = document.getElementById('countryList');
+
+    // Toggle dropdown
+    selected.addEventListener('click', () => {
+        list.classList.toggle('show');
+    });
+
+    // Click outside closes dropdown
+    document.addEventListener('click', (e) => {
+        if (!selected.contains(e.target) && !list.contains(e.target)) {
+            list.classList.remove('show');
+        }
+    });
+
+    // Handle selecting a country
+    list.querySelectorAll('li').forEach(item => {
+        item.addEventListener('click', () => {
+            const country = item.dataset.country;
+            const flagUrl = item.dataset.flag;
+
+            // Update UI
+            selected.querySelector('img').src = flagUrl;
+            selected.querySelector('span').textContent = country.toUpperCase();
+            list.classList.remove('show');
+
+            // Redirect to country-specific URL
+            let currentPath = window.location.pathname;
+
+            const countryPaths = {
+                'uae': '/ae',
+                'uk': '/uk'
+            };
+
+            // Replace current country prefix with new country
+            let newPath = currentPath.replace(/^\/(ae|uk)/, countryPaths[country]);
+
+            // If no country prefix, just prepend
+            if (!/^\/(ae|uk)/.test(currentPath)) {
+                newPath = currentPath;
+            }
+
+            window.location.href = newPath;
+        });
+    });
+});
+</script>
+
 </body>
 
 </html>

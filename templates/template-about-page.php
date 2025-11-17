@@ -623,7 +623,7 @@ load_country_header();
 
 
         <section class="card-section">
-            <h1>Why Trade With Lunaro Markets </h1>
+            <h1>Why Trade With Lunaro</h1>
             <div class="feature-grid">
                 <!-- Card 1 -->
                 <div class="feature-card">
@@ -632,12 +632,29 @@ load_country_header();
                             alt="Lightning Fast Icon">
                     </div>
                     <h3 class="feature-title">Regulated & Secure</h3>
+                    <?php
+                        // get the country from session or default to 'uk'
+                        $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+                        if ($country === 'uae') {
+
+                    ?>
                     <p class="feature-description">
                         Your capital is protected under FCA and FSRA regulations. Funds are are held in segregated (non
                         title transfer) accounts, with negative balance protection for retail clients and transparent
                         risk
                         disclosures.
                     </p>
+                    <?php
+                        }else{
+                    ?>
+                    <p class="feature-description">
+                        Lunaro is authorised and regulated by the FCA. It segregates all retail
+                        client money in accordance with FCA rules. All retail client accounts are
+                        protected by negative balance cover, which ensures that clients cannot
+                        lose more than the amount they deposit.
+                    </p>
+                    <?php } ?>
+
                 </div>
 
                 <!-- Card 2 -->
@@ -648,6 +665,16 @@ load_country_header();
                             alt="Trusted and Regulated Icon">
                     </div>
                     <h3 class="feature-title">Institutional Grade <br>Infrastructure</h3>
+                    <?php
+                        // get the country from session or default to 'uk'
+                        $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+                        if ($country === 'uae') {
+
+                    ?>
+                    <?php
+                        }else{
+                    ?>
+                    <?php } ?>
                     <p class="feature-description">
                         Access the same technology used by professional trading desks: ultra-low latency execution, deep
                         liquidity from multiple providers, and enterprise-level platform stability, built to perform
@@ -663,11 +690,28 @@ load_country_header();
                             alt="Trusted and Regulated Icon">
                     </div>
                     <h3 class="feature-title">Client First Service</h3>
+                    <?php
+                        // get the country from session or default to 'uk'
+                        $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+                        if ($country === 'uae') {
+
+                    ?>
                     <p class="feature-description">
                         Unlike high-volume brokers, we maintain direct client relationships. You'll work with
                         experienced
                         professionals who understand markets and provide tailored support, not automated responses.
                     </p>
+                    <?php
+                        }else{
+                    ?>
+                    <p class="feature-description">
+                        Lunaro prides itself on maintaining direct relationships with its
+                        clients. It works with experienced professionals who have a deep
+                        understanding of the markets and provide tailored support to each
+                        client.
+                    </p>
+                    <?php } ?>
+
                 </div>
 
 
@@ -696,7 +740,7 @@ load_country_header();
                         Find answers to common questions about our platforms, CFDs, ETDs, and how to get started with
                         Lunaro.
                     </p>
-                      <?php
+                    <?php
                         } else {
 
                     ?>
@@ -705,7 +749,7 @@ load_country_header();
                         Find answers to common questions about our platforms,
                         CFDs, Spread Betting, and how to get started with Lunaro.
                     </p>
-                      <?php
+                    <?php
                       }
                     ?>
                     <a href="faqs/"> <button class="btn-primary">Read FAQs</button></a>

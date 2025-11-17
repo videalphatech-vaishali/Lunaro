@@ -204,10 +204,7 @@
   width: 100%;
   display:none;
 }
-@media(max-width:568px){
-  .btn-primary{
-    display:none;
-  }
+@media(max-width:568px){ 
   .btn-mobile{
     display:block;
   }

@@ -1748,11 +1748,11 @@ video {
 
   <div class="risk-warining">
 <p><strong>Risk Warning:</strong>Trading Leveraged Products carries significant risk and can result in losses which exceed deposits. Trading leveraged products may not be suitable for everyone, so please ensure that you fully understand the risks involved and take care to manage your exposure. You have no ownership of the underlying asset.</p>
-<p>Lunaro Markets Limited (“Lunaro”) does not issue advice, recommendations, or opinions in relation to acquiring, holding, or disposing of OTC derivatives or any other leveraged products, nor is Lunaro a financial advisor. All services are provided on an execution-only basis.</p>
-<p>Lunaro Markets Limited is registered in Abu Dhabi Global Market with the registered number 000005466, and its registered office is at 1009, Floor 10, Al Khatem Tower, Abu Dhabi Global Market Square, Al Maryah Island, Abu Dhabi, United Arab Emirates.</p>  
-<p>Lunaro Markets Limited is authorised and regulated by the Financial Services Regulatory Authority (FSRA) in the Abu Dhabi Global Market: FSP Number 200034.
+<br><p>Lunaro Markets Limited (“Lunaro”) does not issue advice, recommendations, or opinions in relation to acquiring, holding, or disposing of OTC derivatives or any other leveraged products, nor is Lunaro a financial advisor. All services are provided on an execution-only basis.</p>
+<br><p>Lunaro Markets Limited is registered in Abu Dhabi Global Market with the registered number 000005466, and its registered office is at 1009, Floor 10, Al Khatem Tower, Abu Dhabi Global Market Square, Al Maryah Island, Abu Dhabi, United Arab Emirates.</p>  
+<br><p>Lunaro Markets Limited is authorised and regulated by the Financial Services Regulatory Authority (FSRA) in the Abu Dhabi Global Market: FSP Number 200034.
 </p>
-<p>The information on this site is not intended for use by any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation. © 2025 Lunaro Markets Limited. All rights reserved.</p>
+<br><p>The information on this site is not intended for use by any person in any country or jurisdiction where such distribution or use would be contrary to local law or regulation. © 2025 Lunaro Markets Limited. All rights reserved.</p>
 </div>
 
   <!-- Bottom Bar -->

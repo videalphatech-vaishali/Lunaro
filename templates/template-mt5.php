@@ -865,7 +865,18 @@ load_country_header();
                     Create an account and start trading with Lunaro Markets.
                 </p>
                 <div class="button-group">
-                    <button class="signup btn-primary">Start trading</button> <br>
+                                <?php 
+            // get the country from session or default to 'uk'
+            $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk'; 
+            if ($country === 'uae') { 
+            ?>
+        <button class="signup btn-primary">Start trading</button>
+            <?php 
+            } else { 
+            ?>
+        <button class="signup btn-primary">Start trading</button>
+        <!-- <button class="signup-uk btn-primary">Start trading</button> -->
+        <?php } ?>>
                 </div>
             </div>
 

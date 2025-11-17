@@ -1254,16 +1254,40 @@ function start_session_on_init() {
 }
 add_action('init', 'start_session_on_init');
 
+;
+
+// Set country based on URL prefix
+function detect_country_from_url() {
+    $uri = $_SERVER['REQUEST_URI'];
+    if (preg_match('#^/ae/#', $uri)) {
+        $_SESSION['country'] = 'uae';
+    } elseif (preg_match('#^/uk/#', $uri)) {
+        $_SESSION['country'] = 'uk';
+    } else {
+        // default
+        if (!isset($_SESSION['country'])) {
+            $_SESSION['country'] = 'uk';
+        }
+    }
+}
+add_action('init', 'detect_country_from_url');
+
+// Handle form submission globally
 // Handle form submission globally
 function handle_country_selection() {
-    if (isset($_POST['country'])) {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['country'])) {
         $_SESSION['country'] = sanitize_text_field($_POST['country']);
-        // Optional: Redirect to same page to clear POST data
+        // Redirect to clear POST data
         wp_safe_redirect($_SERVER['REQUEST_URI']);
         exit;
     }
+    // Optional: handle GET param for opening in new tab
+    if (isset($_GET['country'])) {
+        $_SESSION['country'] = sanitize_text_field($_GET['country']);
+    }
 }
 add_action('init', 'handle_country_selection');
+
 // load country-specific header
 function load_country_header() {
     $country = isset($_SESSION['country']) ? $_SESSION['country'] : 'uk';

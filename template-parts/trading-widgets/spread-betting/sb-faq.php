@@ -284,7 +284,7 @@
         <!-- Card 2 -->
         <div class="feature-card">
             <div class="feature-icon">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/lock-01.svg"
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/message-chat-square.png"
                     alt="Trusted and Regulated Icon">
             </div>
             <h3 class="feature-title">Expert Tools & Support</h3>
