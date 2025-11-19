@@ -1757,6 +1757,21 @@ video {
     <p>© Lunaro. All Rights Reserved.</p>
     <a href="#top" class="mt-4 md:mt-0 hover:text-white">Back to top ↑</a>
   </div>
+   <script src="https://fw-cdn.com/12494356/4899112.js"></script>
+
+    <script>
+        window.fcWidget.init({
+            token: "YOUR_WEB_CHAT_TOKEN",
+            host: "YOUR_WEB_CHAT_HOST"
+        });
+
+        // Auto-open Freshchat when widget is ready
+        window.fcWidget.on("widget:loaded", function () {
+            window.fcWidget.open();
+        });
+
+     
+    </script>
 </footer>
 <?php
 

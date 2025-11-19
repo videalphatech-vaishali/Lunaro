@@ -946,6 +946,12 @@
                 max-width: 1320px;
             }
         }
+
+        .important-notes p {
+            color: #fff;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
     </style>
 </head>
 
@@ -1035,6 +1041,38 @@
                     private trading seminars and market insight events. Designed to connect our professional clients
                     through a blend of networking and world-class hospitality.</p>
             </div>
+            <p>
+            <div class="important-notes">
+                <strong>Important: Reduced Regulatory Protections</strong>
+                <p>By choosing professional client status, you acknowledge reduced regulatory protections
+                compared to retail clients. Please review these important changes carefully.</p><br>
+                <strong>Protections You Will Lose</strong>
+                <p><strong>Negative Balance Protection Professional</strong> accounts are not covered by negative balance
+                    protection. You may be liable for losses exceeding your account balance.</p>
+                </p>
+                <p><strong>Reduced Disclosure Requirements</strong> We may use more sophisticated language and
+                    provide less detailed risk warnings, assuming your professional knowledge and
+                    experience</p>
+                <p><strong>Limited Compensation Schemes</strong> Access to Financial Ombudsman Service may be
+                    restricted for professional clients depending on your individual circumstances.</p>
+                <p><strong>Enhanced Leverage Risk</strong> Higher leverage ratios increase both profit potential and
+                    loss
+                    risk. Losses can exceed your initial deposit significantly.</p>
+                <p><strong>Sophisticated language</strong> We won't necessarily use simple language in our communications
+                    to pro clients.</p>
+                <p><strong>Communication and Financial Promotion:</strong> Certain FCA (or equivalent) rules relating to
+                    the form and content of information provided by Lunaro do not apply, including those
+                    relating to communications and financial promotions.</p><br>
+                <strong>Regulatory Compliance Notice</strong><br>
+                <p><strong>FCA Professional Client Rules</strong> This account may not receive the same protections
+                    afforded to Retail accounts offered by firms regulated by the FCA. You must acknowledge
+                    in writing that you understand the reduced protections.—>Under FCA rules (COBS 3.5),
+                    we are required to assess your experience and knowledge to ensure you understand the
+                    risks of professional client status. This assessment is based on information you provide
+                    about your trading background and financial expertise.</p><br>
+                <p><strong>Best Execution Standards</strong> Professional clients receive best execution appropriate to
+                    your sophistication level, which may differ from retail client standards.</p>
+            </div>
         </div>
 
 
@@ -1053,10 +1091,10 @@
                     </div>
                     <h3>Cash Rebate Programs</h3>
                     <p>
-                    Earn monthly cash rebates based on trading volume across
-                    forex and indices markets, with tiers starting from $5M
-                    monthly notional volumne, 
-                    subject to conditions.
+                        Earn monthly cash rebates based on trading volume across
+                        forex and indices markets, with tiers starting from $5M
+                        monthly notional volumne,
+                        subject to conditions.
                     </p>
                 </div>
 
@@ -1068,9 +1106,10 @@
                     </div>
                     <h3>VIP Events & Hospitality</h3>
                     <p>
-                    Receive invitations to exclusive trading seminars, market
-                    outlook events, and networking opportunities with fellow
-                    professional traders.</div>
+                        Receive invitations to exclusive trading seminars, market
+                        outlook events, and networking opportunities with fellow
+                        professional traders.
+                </div>
 
                 <!-- Card 3 -->
                 <div class="exclusive-card">
@@ -1161,7 +1200,8 @@
                 <div class="card pro">
                     <h2>Lunaro Pro</h2>
                     <p class="desc">For teams aiming with performance, precision, and strategy.</p>
-                   <a href="/open-pro-account"> <button class="professional-btn">Create Professional Account</button></a>
+                    <a href="/open-pro-account"> <button class="professional-btn">Create Professional
+                            Account</button></a>
                     <ul class="features lunaro-features">
                         <li>Maximum Leverage: Up to 250:1</li>
                         <li>Minimum Spread: From 0.34 pips</li>
@@ -1196,7 +1236,7 @@
 
             </div>
 
-              <a href="/open-pro-account"><button class="footer-btn">Create Professional Account</button></a> 
+            <a href="/open-pro-account"><button class="footer-btn">Create Professional Account</button></a>
 
         </section>
 

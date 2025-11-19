@@ -193,7 +193,13 @@
         <div class="left-side">
             <h2>What is Spread Betting?</h2>
             <p>
-                Spread betting is a tax-efficient way to access shares, indices, forex, commodities, and bonds with complete flexibility. You determine your stake per point of market movement, giving you direct control over both risk exposure and potential returns. It's a popular choice for UK traders seeking capital gains tax exemption and commission-free trading on most instruments. Unlike traditional investing, you never own the asset itself; you're simply taking a position on whether its price will move up or down. This means you can profit in both rising and falling markets.
+                Spread betting is a tax-efficient way to access shares, indices, forex, commodities,
+                and bonds with complete flexibility. You determine your stake per point of
+                market movement. It's a popular choice for UK traders seeking capital gains tax
+                exemption and commission-free trading on most instruments. Unlike traditional
+                investing, you never own the asset itself; you're simply taking a position on
+                whether its price will move up or down. This means you can profit in both rising
+                and falling markets.
             </p>
 
         </div>
@@ -212,8 +218,8 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bullet-circular-check.png" alt=""
                     class="w-3 h-3">
                 <div class="column-right-text">
-                    <span>Flexible Stake Sizes from £1 Per Point</span>
-                    <p>Whether you're testing a strategy or scaling a position, you control your risk with precise stake sizing, starting from just £1 per point.</p>
+                    <span>Flexible Stake Sizes from £0.0005 Per Point</span>
+                    <p>Whether you're testing a strategy or scaling a position, you control your risk with precise stake sizing, starting from just £0.0005 per point.</p>
                 </div>
             </div>
             <div class="advantage-item">
@@ -233,6 +239,39 @@
                 </div>
             </div>
             <div class="rs-disclamair"><p>Spread Betting is currently free from Capital Gains Tax (CGT) and there is no stamp duty in the United Kingdom. Please note that tax treatment depends on your individual circumstances and may change in the future. Tax laws can be altered or may differ if you pay tax in a jurisdiction other than the UK.</p></div>
+                 <h2>Key Risks</h2>
+            <div class="advantage-item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bullet-circular-check.png" alt=""
+                    class="w-3 h-3">
+                <div class="column-right-text">
+                    <p>Market volatility can cause rapid price movements, and you may lose part or all
+                     of your invested capital if markets move against your position.</p>
+                </div>
+            </div>
+                        <div class="advantage-item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bullet-circular-check.png" alt=""
+                    class="w-3 h-3">
+                <div class="column-right-text">
+                    <p>Leverage amplifies both profits and losses. Even small market movements can
+                    result in significant losses, and you may lose more than your initial investment.</p>
+                </div>
+            </div>
+                        <div class="advantage-item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bullet-circular-check.png" alt=""
+                    class="w-3 h-3">
+                <div class="column-right-text">
+                    <p>Trading in both directions increases complexity and exposure to market risk.
+                     Sudden reversals or volatility can result in unexpected losses.</p>
+                </div>
+            </div>
+                        <div class="advantage-item">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bullet-circular-check.png" alt=""
+                    class="w-3 h-3">
+                <div class="column-right-text">
+                    <p>While tight spreads reduce entry costs, trading fees and financing charges can
+                    still affect your overall returns, especially on leveraged positions</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>

@@ -46,7 +46,7 @@
     <div class="about-us-hero-section-body">
         <h2>Fees and charges</h2>
         <h4>Transparency is at the core of our pricing philosophy. At Lunaro,
-            we belive you should know<br>exactly what
+            we believe you should know<br>exactly what
             you're paying before you trade. Our competitive fees structure is designed to<br> maximize your tradin
             potential while maintaining the hightest levels of service and<br>technology.
             to our
